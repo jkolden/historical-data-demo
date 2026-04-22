@@ -95,7 +95,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -104,49 +104,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -247,7 +247,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -256,49 +256,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/3/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -399,7 +399,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -408,49 +408,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/5/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -551,7 +551,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -560,49 +560,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1003/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -703,7 +703,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -712,49 +712,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1004/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -855,7 +855,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -864,49 +864,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1005/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1007,7 +1007,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1016,49 +1016,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/7/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1159,7 +1159,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1168,49 +1168,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1006/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1311,7 +1311,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1320,49 +1320,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1007/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1463,7 +1463,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1472,49 +1472,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1008/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1615,7 +1615,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1624,49 +1624,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1767,7 +1767,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1776,49 +1776,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/2/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -1919,7 +1919,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -1928,49 +1928,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/6/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2071,7 +2071,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2080,49 +2080,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/8/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2223,7 +2223,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2232,49 +2232,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/9/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2375,7 +2375,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2384,49 +2384,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/10/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2527,7 +2527,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2536,49 +2536,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/11/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2679,7 +2679,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2688,49 +2688,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1018/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2831,7 +2831,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2840,49 +2840,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1019/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -2983,7 +2983,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -2992,49 +2992,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/24/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3135,7 +3135,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -3144,49 +3144,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/25/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3287,7 +3287,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -3296,49 +3296,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1002/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3439,7 +3439,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -3448,49 +3448,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/12/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3591,7 +3591,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -3600,49 +3600,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/13/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3743,7 +3743,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14",
                     "name": "invoices",
                     "kind": "item",
                     "properties": {
@@ -3752,49 +3752,49 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/appliedPrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/appliedPrepayments",
                     "name": "appliedPrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/attachments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/attachments",
                     "name": "attachments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/availablePrepayments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/availablePrepayments",
                     "name": "availablePrepayments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceDff",
                     "name": "invoiceDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceGdf",
                     "name": "invoiceGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceInstallments",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceInstallments",
                     "name": "invoiceInstallments",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceLines",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/14/child/invoiceLines",
                     "name": "invoiceLines",
                     "kind": "collection"
                 }
@@ -3808,55 +3808,55 @@
     "links": [
         {
             "rel": "self",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices",
             "name": "invoices",
             "kind": "collection"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelLine",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/cancelLine",
             "name": "cancelLine",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice",
             "name": "validateInvoice",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/calculateTax",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/calculateTax",
             "name": "calculateTax",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/generateDistributions",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/generateDistributions",
             "name": "generateDistributions",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/applyPrepayments",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/applyPrepayments",
             "name": "applyPrepayments",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/unapplyPrepayments",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/unapplyPrepayments",
             "name": "unapplyPrepayments",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/reverseDistributions",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/reverseDistributions",
             "name": "reverseDistributions",
             "kind": "other"
         },
         {
             "rel": "action",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelInvoice",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/action/cancelInvoice",
             "name": "cancelInvoice",
             "kind": "other"
         }

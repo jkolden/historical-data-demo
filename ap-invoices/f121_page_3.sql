@@ -28,11 +28,11 @@ wwv_flow_imp.import_begin (
 end;
 /
  
-prompt APPLICATION 121 - Fusion Integrated Sample App (ecga-test)
+prompt APPLICATION 121 - Fusion Integrated Sample App (your-instance)
 --
 -- Application Export:
 --   Application:     121
---   Name:            Fusion Integrated Sample App (ecga-test)
+--   Name:            Fusion Integrated Sample App (your-instance)
 --   Exported By:     JOHN.KOLDEN@SIERRA-CEDAR.COM
 --   Flashback:       0
 --   Export Type:     Page Export

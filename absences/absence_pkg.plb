@@ -42,7 +42,7 @@ create or replace package body absence_pkg as
 
     -- utl_url.escape preserves single quotes and parens (matching Postman)
     l_url :=
-         'https://ecga-test.fa.us2.oraclecloud.com/hcmRestApi/resources/11.13.18.05/absences'
+         'https://<your-fusion-host>/hcmRestApi/resources/11.13.18.05/absences'
       || '?q=' || utl_url.escape(l_q, false, 'AL32UTF8')
       || '&onlyData=true'
       || '&totalResults=true'
@@ -66,7 +66,7 @@ create or replace package body absence_pkg as
     l_response := apex_web_service.make_rest_request(
       p_url                  => l_url,
       p_http_method          => 'GET',
-      p_credential_static_id => 'REST_API_CRED'
+      p_credential_static_id => '<your-credential-static-id>'
     );
 
     l_http_code := apex_web_service.g_status_code;

@@ -80,7 +80,7 @@
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
                     "name": "invoiceLines",
                     "kind": "item",
                     "properties": {
@@ -89,37 +89,37 @@
                 },
                 {
                     "rel": "canonical",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
                     "name": "invoiceLines",
                     "kind": "item"
                 },
                 {
                     "rel": "parent",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001",
                     "name": "invoices",
                     "kind": "item"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceDistributions",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceDistributions",
                     "name": "invoiceDistributions",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineDff",
                     "name": "invoiceLineDff",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineGdf",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineGdf",
                     "name": "invoiceLineGdf",
                     "kind": "collection"
                 },
                 {
                     "rel": "child",
-                    "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineProjectDff",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineProjectDff",
                     "name": "invoiceLineProjectDff",
                     "kind": "collection"
                 }
@@ -133,7 +133,7 @@
     "links": [
         {
             "rel": "self",
-            "href": "https://ecga-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines",
             "name": "invoiceLines",
             "kind": "collection"
         }

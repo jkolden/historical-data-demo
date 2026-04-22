@@ -33,7 +33,7 @@ create or replace package body invoice_pkg as
       l_q := l_q || ';ValidationStatus = "' || l_status || '"';
     end if;
 
-    l_url := 'https://ecga-test.fa.us2.oraclecloud.com/fscmRestApi/resources/11.13.18.05/invoices'
+    l_url := 'https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices'
           || '?q=' || apex_util.url_encode(l_q)
           || '&totalResults=true&limit=100';
 
@@ -44,7 +44,7 @@ create or replace package body invoice_pkg as
     l_response := apex_web_service.make_rest_request(
       p_url                  => l_url,
       p_http_method          => 'GET',
-      p_credential_static_id => 'REST_API_CRED'
+      p_credential_static_id => '<your-credential-static-id>'
     );
 
     l_http_code := apex_web_service.g_status_code;
