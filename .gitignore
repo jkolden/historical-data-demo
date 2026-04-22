@@ -9,3 +9,12 @@ desktop.ini
 *~
 .vscode/
 .idea/
+
+# JSON endpoint samples (contain real data)
+*.json
+
+# Data insert scripts (contain sample/legacy data)
+*_data.sql
+
+# Images
+images/
