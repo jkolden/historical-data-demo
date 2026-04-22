@@ -16,6 +16,7 @@ All tables mirror the **full field set** from their corresponding Fusion REST en
 | 3 | `DEMO_PO_HIST` | Purchase Orders | `purchase-orders/demo_po_hist_ddl.sql` | 72 | `/fscmRestApi/.../purchaseOrders` |
 | 4 | `DEMO_ASSIGNMENT_HIST` | HR Assignments | `assignments/demo_assignment_hist_ddl.sql` | 62 | `/hcmRestApi/.../publicWorkers` |
 | 5 | `DEMO_ABSENCE_HIST` | Absences | `absences/demo_absence_hist_ddl.sql` | 56 | `/hcmRestApi/.../absences` |
+| 6 | `DEMO_AR_INVOICES_HIST` | Receivables Invoices | `receivables/demo_ar_invoices_hist.sql` | 80 | `/fscmRestApi/.../receivablesInvoices` |
 
 ---
 
@@ -515,6 +516,113 @@ Absence/leave history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11
 
 ---
 
+## 6. DEMO_AR_INVOICES_HIST
+
+Receivables (AR) invoice history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/receivablesInvoices`.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| **Source tag** | | |
+| `SourceSystem` | VARCHAR2(30) | NOT NULL - 'Legacy' or 'EBS' |
+| **Core identifiers** | | |
+| `CustomerTransactionId` | NUMBER | NOT NULL |
+| `TransactionNumber` | VARCHAR2(200) | |
+| `TransactionDate` | DATE | |
+| `TransactionSource` | VARCHAR2(200) | |
+| `TransactionType` | VARCHAR2(200) | |
+| `BusinessUnit` | VARCHAR2(200) | |
+| `InvoiceStatus` | VARCHAR2(100) | |
+| `InvoiceCurrencyCode` | VARCHAR2(30) | |
+| **Amounts** | | |
+| `EnteredAmount` | NUMBER | |
+| `FreightAmount` | NUMBER | |
+| `InvoiceBalanceAmount` | NUMBER | |
+| **Dates** | | |
+| `AccountingDate` | DATE | |
+| `BillingDate` | DATE | |
+| `DueDate` | DATE | |
+| `ShipDate` | DATE | |
+| `PurchaseOrderDate` | DATE | |
+| **Bill-To** | | |
+| `BillToCustomerName` | VARCHAR2(400) | |
+| `BillToCustomerNumber` | VARCHAR2(100) | |
+| `BillToPartyId` | NUMBER | |
+| `BillToSite` | VARCHAR2(200) | |
+| `BillToContact` | VARCHAR2(400) | |
+| **Ship-To** | | |
+| `ShipToCustomerName` | VARCHAR2(400) | |
+| `ShipToCustomerNumber` | VARCHAR2(100) | |
+| `ShipToSite` | VARCHAR2(200) | |
+| `ShipToContact` | VARCHAR2(400) | |
+| **Paying Customer** | | |
+| `PayingCustomerAccount` | VARCHAR2(200) | |
+| `PayingCustomerName` | VARCHAR2(400) | |
+| `PayingCustomerSite` | VARCHAR2(200) | |
+| **Sold-To** | | |
+| `SoldToPartyNumber` | VARCHAR2(100) | |
+| **Payment & Terms** | | |
+| `PaymentTerms` | VARCHAR2(200) | |
+| `ReceiptMethod` | VARCHAR2(200) | |
+| `InvoicingRule` | VARCHAR2(200) | |
+| `BankAccountNumber` | VARCHAR2(200) | |
+| `Prepayment` | VARCHAR2(100) | |
+| `StructuredPaymentReference` | VARCHAR2(200) | |
+| **Credit Card** | | |
+| `CardHolderFirstName` | VARCHAR2(200) | |
+| `CardHolderLastName` | VARCHAR2(200) | |
+| `CreditCardTokenNumber` | VARCHAR2(200) | |
+| `CreditCardIssuerCode` | VARCHAR2(100) | |
+| `CreditCardExpirationDate` | VARCHAR2(100) | |
+| `CreditCardAuthorizationRequestIdentifier` | VARCHAR2(200) | |
+| `CreditCardVoiceAuthorizationCode` | VARCHAR2(200) | |
+| `CreditCardErrorCode` | VARCHAR2(100) | |
+| `CreditCardErrorText` | VARCHAR2(2000) | |
+| **Conversion / Currency** | | |
+| `ConversionDate` | DATE | |
+| `ConversionRate` | NUMBER | |
+| `ConversionRateType` | VARCHAR2(100) | |
+| **Sales & Shipping** | | |
+| `SalesPersonNumber` | VARCHAR2(100) | |
+| `Carrier` | VARCHAR2(200) | |
+| `ShippingReference` | VARCHAR2(200) | |
+| **Purchase Order** | | |
+| `PurchaseOrder` | VARCHAR2(200) | |
+| `PurchaseOrderRevision` | VARCHAR2(100) | |
+| **References & Notes** | | |
+| `CrossReference` | VARCHAR2(200) | |
+| `Comments` | VARCHAR2(4000) | |
+| `InternalNotes` | VARCHAR2(4000) | |
+| `SpecialInstructions` | VARCHAR2(4000) | |
+| `Email` | VARCHAR2(400) | |
+| **Print** | | |
+| `InvoicePrinted` | VARCHAR2(30) | |
+| `PrintOption` | VARCHAR2(100) | |
+| `LastPrintDate` | DATE | |
+| `OriginalPrintDate` | DATE | |
+| **Legal & Tax** | | |
+| `LegalEntityIdentifier` | VARCHAR2(200) | |
+| `DefaultTaxationCountry` | VARCHAR2(100) | |
+| `FirstPartyRegistrationNumber` | VARCHAR2(200) | |
+| `ThirdPartyRegistrationNumber` | VARCHAR2(200) | |
+| `DocumentFiscalClassification` | VARCHAR2(200) | |
+| **Miscellaneous** | | |
+| `DocumentNumber` | NUMBER | |
+| `RemitToAddress` | VARCHAR2(2000) | |
+| `DeliveryMethod` | VARCHAR2(100) | |
+| `Intercompany` | VARCHAR2(100) | |
+| `AllowCompletion` | VARCHAR2(10) | |
+| `ControlCompletionReason` | VARCHAR2(2000) | |
+| **Audit** | | |
+| `CreatedBy` | VARCHAR2(200) | |
+| `CreationDate` | TIMESTAMP | |
+| `LastUpdatedBy` | VARCHAR2(200) | |
+| `LastUpdateDate` | TIMESTAMP | |
+
+**PK:** `(SourceSystem, CustomerTransactionId)`
+**Indexes:** `TransactionDate`, `BillToCustomerNumber`, `BusinessUnit`, `InvoiceStatus`
+
+---
+
 ## Folder Structure
 
 ```
@@ -548,9 +656,9 @@ Historical Data Demo/
 │   ├── absence_pkg.sql / .plb             PL/SQL REST package
 │   ├── absence_page_query.sql / absence_kpi_query.sql
 │   └── absences.json                      REST endpoint reference
-└── images/                ── Screenshots & reference images
-    ├── Screenshot AP Invoices.png
-    └── Target Subject Areas for Historical Data Demo.png
+└── receivables/           ── Receivables Invoices (AR)
+    ├── demo_ar_invoices_hist.sql          DDL
+    ├── receivables_pkg.sql / .plb         PL/SQL REST package
 ```
 
 ## Per-Folder Artifacts
@@ -571,7 +679,6 @@ Historical Data Demo/
 
 Not yet built:
 - Check history
-- Billing history
 - Prior year(s) Benefit enrollments
 - Time history
 - Payroll and W2 history
