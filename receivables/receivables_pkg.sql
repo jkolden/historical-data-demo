@@ -9,5 +9,12 @@ create or replace package receivables_pkg as
     p_status      varchar2 default null
   );
 
+  /**
+   * Loads Fusion billToCustomers LOV into collection FUSION_AR_CUSTOMERS.
+   * Only fetches once per session (skips if collection already exists).
+   * Call from the customer popup LOV "Before Header" or inline in LOV SQL.
+   */
+  procedure load_customer_lov;
+
 end receivables_pkg;
 /

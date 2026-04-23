@@ -1,0 +1,2 @@
+-- Payee LOV for P6002_PAYEE popup (hardcoded for demo)
+-- STATIC2:ABC Supplies;ABC Supplies,CHM Corp;CHM Corp,Dell Inc.;Dell Inc.,Lee Supplies;Lee Supplies,Liberty Electric;Liberty Electric,Marx Extrusion and Fabrication;Marx Extrusion and Fabrication,US Financial Svcs;US Financial Svcs,Windsor Inc;Windsor Inc

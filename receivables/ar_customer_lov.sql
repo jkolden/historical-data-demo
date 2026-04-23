@@ -1,16 +1,16 @@
 ------------------------------------------------------------------------
 --  AR Customer popup LOV
 --
---  Option A (below): Union distinct customers from local hist table
---           + Fusion collection. Works offline / always available.
+--  Uses the FUSION_AR_CUSTOMERS collection (loaded once per session
+--  by receivables_pkg.load_customer_lov via REST data source
+--  "receivables_customer_lov") UNION with local history table.
 --
---  Option B: Use an APEX REST Data Source pointing at the Fusion LOV:
---    /fscmRestApi/resources/11.13.18.05/receivablesInvoices/{id}/lov/billToCustomers?limit=1000
---    and bind it to a Popup LOV with display=BillToCustomerName,
---    return=BillToCustomerName.
+--  Call receivables_pkg.load_customer_lov in a Before Header process
+--  (or in the LOV's "function returning SQL" wrapper) so the
+--  collection is populated before the LOV fires.
 ------------------------------------------------------------------------
 
-/* Distinct customer names from both sources */
+/* Distinct customer names from both Fusion LOV + local history */
 select distinct customer_name as d, customer_name as r
 from (
   /* From local history table */
@@ -20,11 +20,11 @@ from (
 
   union
 
-  /* From Fusion collection (if loaded) */
-  select json_value(c.clob001, '$.BillToCustomerName') as customer_name
+  /* From Fusion customer LOV collection */
+  select c.c001 as customer_name
   from apex_collections c
-  where c.collection_name = 'FUSION_AR_ROWS'
-    and json_value(c.clob001, '$.BillToCustomerName') is not null
+  where c.collection_name = 'FUSION_AR_CUSTOMERS'
+    and c.c001 is not null
 )
 order by 1
 ;

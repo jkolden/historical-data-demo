@@ -20,7 +20,7 @@ begin
 wwv_flow_imp.import_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.15'
-,p_default_workspace_id=><insert workspace id here>
+,p_default_workspace_id=> 8325564762610682 
 ,p_default_application_id=>121
 ,p_default_id_offset=>0
 ,p_default_owner=>'WKSP_FREEDEMO'
@@ -28,7 +28,7 @@ wwv_flow_imp.import_begin (
 end;
 /
 
-prompt APPLICATION 121 - Fusion Integrated Sample App (your-instance)
+prompt APPLICATION 121 - Fusion Integrated Sample App
 --
 -- Application Export:
 --   Application:     121
@@ -821,11 +821,11 @@ wwv_flow_imp_page.create_page_item(
 '',
 '  union',
 '',
-'  /* From Fusion collection (if loaded) */',
-'  select json_value(c.clob001, ''$.BillToCustomerName'') as customer_name',
+'  /* From Fusion customer LOV collection */',
+'  select c.c001 as customer_name',
 '  from apex_collections c',
-'  where c.collection_name = ''FUSION_AR_ROWS''',
-'    and json_value(c.clob001, ''$.BillToCustomerName'') is not null',
+'  where c.collection_name = ''FUSION_AR_CUSTOMERS''',
+'    and c.c001 is not null',
 ')',
 'order by 1',
 ''))
@@ -928,6 +928,19 @@ wwv_flow_imp_page.create_page_item(
 ,p_display_as=>'NATIVE_HIDDEN'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'value_protected', 'Y')).to_clob
+);
+------------------------------------------------------------------------
+-- Process: Before Header – load customer LOV collection (once/session)
+------------------------------------------------------------------------
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(60010001000000085)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Load Customer LOV'
+,p_process_sql_clob=>'receivables_pkg.load_customer_lov;'
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
 );
 ------------------------------------------------------------------------
 -- Dynamic action: on change of filters -> reload Fusion data + refresh

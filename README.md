@@ -17,6 +17,7 @@ All tables mirror the **full field set** from their corresponding Fusion REST en
 | 4 | `DEMO_ASSIGNMENT_HIST` | HR Assignments | `assignments/demo_assignment_hist_ddl.sql` | 62 | `/hcmRestApi/.../publicWorkers` |
 | 5 | `DEMO_ABSENCE_HIST` | Absences | `absences/demo_absence_hist_ddl.sql` | 56 | `/hcmRestApi/.../absences` |
 | 6 | `DEMO_AR_INVOICES_HIST` | Receivables Invoices | `receivables/demo_ar_invoices_hist.sql` | 80 | `/fscmRestApi/.../receivablesInvoices` |
+| 7 | `DEMO_CHECKS_HIST` | Check History | `checks/demo_checks_hist.sql` | 85 | `/fscmRestApi/.../payablesPayments` |
 
 ---
 
@@ -623,6 +624,120 @@ Receivables (AR) invoice history from legacy/EBS systems. Mirrors `/fscmRestApi/
 
 ---
 
+## 7. DEMO_CHECKS_HIST
+
+Check (payment) history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/payablesPayments`.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| **Identity** | | |
+| `Id` | NUMBER | Identity PK (auto-generated) |
+| **Source tag** | | |
+| `SourceSystem` | VARCHAR2(30) | NOT NULL - 'Legacy' or 'EBS' |
+| **Identifiers** | | |
+| `CheckId` | NUMBER | |
+| `PaymentId` | NUMBER | |
+| `PaymentReference` | NUMBER | |
+| `PaperDocumentNumber` | NUMBER | "Check number" |
+| `PaymentNumber` | NUMBER | |
+| `PaymentFileReference` | NUMBER | |
+| **Core payment info** | | |
+| `PaymentProcessRequest` | VARCHAR2(255) | |
+| `PaymentAmount` | NUMBER | |
+| `PaymentDate` | DATE | |
+| `AccountingDate` | DATE | |
+| `PaymentDescription` | VARCHAR2(240) | |
+| **Conversion** | | |
+| `ConversionRate` | NUMBER | |
+| `ConversionDate` | DATE | |
+| `ConversionRateType` | VARCHAR2(30) | |
+| **Clearing** | | |
+| `ClearingDate` | DATE | |
+| `ClearingAmount` | NUMBER | |
+| `ClearingLedgerAmount` | NUMBER | |
+| `ClearingConversionRate` | NUMBER | |
+| `ClearingConversionDate` | DATE | |
+| `ClearingConversionRateType` | VARCHAR2(30) | |
+| **Maturity** | | |
+| `MaturityDate` | DATE | |
+| `MaturityConversionRateType` | VARCHAR2(30) | |
+| `MaturityConversionDate` | DATE | |
+| `MaturityConversionRate` | NUMBER | |
+| **Value dates** | | |
+| `AnticipatedValueDate` | DATE | |
+| `ClearingValueDate` | DATE | |
+| **Stop / Void** | | |
+| `StopDate` | DATE | |
+| `StopReason` | VARCHAR2(240) | |
+| `StopReference` | VARCHAR2(240) | |
+| `VoidDate` | DATE | |
+| `VoidAccountingDate` | DATE | |
+| **Statuses** | | |
+| `PaymentStatus` | VARCHAR2(80) | Negotiable, Voided, Cleared, etc. |
+| `AccountingStatus` | VARCHAR2(80) | |
+| `IbyPaymentStatus` | VARCHAR2(80) | |
+| `ReconciledFlag` | VARCHAR2(5) | 'true'/'false' |
+| **Payment classification** | | |
+| `PaymentType` | VARCHAR2(80) | |
+| `PaymentCurrency` | VARCHAR2(15) | |
+| `PaymentBaseAmount` | NUMBER | |
+| `PaymentBaseCurrency` | VARCHAR2(15) | |
+| `CrossCurrencyRateType` | VARCHAR2(30) | |
+| **Amounts** | | |
+| `WithheldAmount` | NUMBER | |
+| `BankChargeAmount` | NUMBER | |
+| **Org / Entity** | | |
+| `LegalEntity` | VARCHAR2(240) | |
+| `BusinessUnit` | VARCHAR2(240) | |
+| `ProcurementBU` | VARCHAR2(240) | |
+| `PaymentFunction` | VARCHAR2(80) | |
+| **Payee** | | |
+| `Payee` | VARCHAR2(240) | |
+| `PartyId` | NUMBER | |
+| `PayeeSite` | VARCHAR2(240) | |
+| `EmployeeAddress` | VARCHAR2(240) | |
+| `SupplierNumber` | VARCHAR2(30) | |
+| `ThirdPartySupplier` | VARCHAR2(240) | |
+| `ThirdPartyAddressName` | VARCHAR2(240) | |
+| **Bank accounts** | | |
+| `ExternalBankAccountId` | NUMBER | |
+| `RemitToAccountNumber` | VARCHAR2(100) | |
+| `DisbursementBankAccountNumber` | VARCHAR2(100) | |
+| `DisbursementBankAccountName` | VARCHAR2(150) | |
+| **Payment method / Profile** | | |
+| `PaymentMethodCode` | VARCHAR2(30) | |
+| `PaymentMethod` | VARCHAR2(100) | |
+| `PaymentDocument` | VARCHAR2(80) | |
+| `PaymentProcessProfileCode` | VARCHAR2(80) | |
+| `PaymentProcessProfile` | VARCHAR2(240) | |
+| **Document** | | |
+| `DocumentCategory` | VARCHAR2(80) | |
+| `DocumentSequence` | NUMBER | |
+| `VoucherNumber` | NUMBER | |
+| `SeparateRemittanceAdvice` | VARCHAR2(10) | |
+| **Address** | | |
+| `AddressLine1` - `AddressLine4` | VARCHAR2(240) | 4 address lines |
+| `City` | VARCHAR2(150) | |
+| `County` | VARCHAR2(150) | |
+| `Province` | VARCHAR2(150) | |
+| `State` | VARCHAR2(150) | |
+| `Country` | VARCHAR2(10) | |
+| `Zip` | VARCHAR2(60) | |
+| **Audit** | | |
+| `CreatedBy` | VARCHAR2(100) | |
+| `CreationDate` | TIMESTAMP WITH TIME ZONE | |
+| `LastUpdatedBy` | VARCHAR2(100) | |
+| `LastUpdateDate` | TIMESTAMP WITH TIME ZONE | |
+| **Misc** | | |
+| `PaymentMode` | VARCHAR2(80) | |
+| `FundingCardAccount` | VARCHAR2(240) | |
+| `DigitalPaymentAccount` | VARCHAR2(240) | |
+
+**PK:** `Id` (identity)
+**Indexes:** `PaymentDate`, `Payee`, `PaymentStatus`, `BusinessUnit`
+
+---
+
 ## Folder Structure
 
 ```
@@ -656,9 +771,15 @@ Historical Data Demo/
 │   ├── absence_pkg.sql / .plb             PL/SQL REST package
 │   ├── absence_page_query.sql / absence_kpi_query.sql
 │   └── absences.json                      REST endpoint reference
-└── receivables/           ── Receivables Invoices (AR)
-    ├── demo_ar_invoices_hist.sql          DDL
-    ├── receivables_pkg.sql / .plb         PL/SQL REST package
+├── receivables/           ── Receivables Invoices (AR)
+│   ├── demo_ar_invoices_hist.sql          DDL
+│   ├── receivables_pkg.sql / .plb         PL/SQL REST package
+└── checks/               ── Check History (Payments)
+    ├── demo_checks_hist.sql               DDL + sample data
+    ├── check_history_pkg.sql / .plb       PL/SQL REST package
+    ├── check_payee_lov.sql                Payee LOV reference
+    ├── payablesPayments.json / payablesPaymentsDescribe.json  REST endpoint reference
+    └── f121_page_6002.sql                 APEX page
 ```
 
 ## Per-Folder Artifacts
@@ -678,7 +799,6 @@ Historical Data Demo/
 ## Remaining Subject Areas (from SOW)
 
 Not yet built:
-- Check history
 - Prior year(s) Benefit enrollments
 - Time history
 - Payroll and W2 history

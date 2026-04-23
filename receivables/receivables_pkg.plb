@@ -12,8 +12,8 @@ create or replace package body receivables_pkg as
     l_url        varchar2(4000);
     l_q          varchar2(2000);
     l_http_code  pls_integer;
-    l_customer   varchar2(1000);
     l_status     varchar2(1000);
+    l_party_id   number;
   begin
     if p_start_date is null or p_end_date is null then
       raise_application_error(-20001, 'Start date and end date are required.');
@@ -22,21 +22,38 @@ create or replace package body receivables_pkg as
       raise_application_error(-20002, 'Start date cannot be after end date.');
     end if;
 
-    l_customer := case when p_customer is not null then replace(p_customer, '"', '\"') end;
-    l_status   := case when p_status   is not null then replace(p_status,   '"', '\"') end;
+    l_status := case when p_status is not null then replace(p_status, '"', '\"') end;
 
-    l_q := 'TransactionDate >= "' || to_char(p_start_date, 'YYYY-MM-DD') || '"'
-        || ';TransactionDate <= "' || to_char(p_end_date,   'YYYY-MM-DD') || '"';
-    if l_customer is not null then
-      l_q := l_q || ';BillToCustomerName = "' || l_customer || '"';
+    -- Build q filter from queryable attributes only.
+    -- CreationDate IS queryable (datetime format with T separator).
+    -- TransactionDate, AccountingDate, BillingDate are NOT queryable.
+    -- BillToCustomerName is NOT queryable; use BillToPartyId instead.
+    l_q := 'CreationDate>="' || to_char(p_start_date, 'YYYY-MM-DD') || 'T00:00:00"'
+        || ';CreationDate<="' || to_char(p_end_date,   'YYYY-MM-DD') || 'T23:59:59"';
+
+    -- BillToPartyId IS queryable; look up from customer LOV collection.
+    if p_customer is not null then
+      begin
+        select c.n001
+          into l_party_id
+          from apex_collections c
+         where c.collection_name = 'FUSION_AR_CUSTOMERS'
+           and c.c001 = p_customer
+           and rownum = 1;
+        l_q := l_q || ';BillToPartyId=' || l_party_id;
+      exception
+        when no_data_found then null;
+      end;
     end if;
+
+    -- InvoiceStatus IS queryable
     if l_status is not null then
-      l_q := l_q || ';InvoiceStatus = "' || l_status || '"';
+      l_q := l_q || ';InvoiceStatus="' || l_status || '"';
     end if;
 
-    l_url := 'https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/receivablesInvoices'
-          || '?q=' || apex_util.url_encode(l_q)
-          || '&totalResults=true&limit=100';
+    l_url := 'https://ecga-test.fa.us2.oraclecloud.com/fscmRestApi/resources/11.13.18.05/receivablesInvoices'
+          || '?totalResults=true&limit=100'
+          || '&q=' || apex_util.url_encode(l_q);
 
     apex_web_service.g_request_headers.delete;
     apex_web_service.g_request_headers(1).name  := 'Accept';
@@ -75,6 +92,45 @@ create or replace package body receivables_pkg as
     end loop;
 
   end load_receivables_invoices;
+
+  procedure load_customer_lov
+  as
+    l_context  apex_exec.t_context;
+    l_columns  apex_exec.t_columns;
+  begin
+    -- only fetch once per session
+    if apex_collection.collection_exists('FUSION_AR_CUSTOMERS') then
+      return;
+    end if;
+
+    apex_collection.create_collection('FUSION_AR_CUSTOMERS');
+
+    -- request the columns we need (c001=name, c002=number, n001=PartyId)
+    apex_exec.add_column(l_columns, 'BILLTOCUSTOMERNAME');
+    apex_exec.add_column(l_columns, 'BILLTOCUSTOMERNUMBER');
+    apex_exec.add_column(l_columns, 'PARTYID');
+
+    l_context := apex_exec.open_rest_source_query(
+      p_static_id    => 'receivables_customer_lov',
+      p_max_rows     => 1000,
+      p_columns      => l_columns
+    );
+
+    while apex_exec.next_row(l_context) loop
+      apex_collection.add_member(
+        p_collection_name => 'FUSION_AR_CUSTOMERS',
+        p_c001            => apex_exec.get_varchar2(l_context, 1),
+        p_c002            => apex_exec.get_varchar2(l_context, 2),
+        p_n001            => apex_exec.get_number(l_context, 3)
+      );
+    end loop;
+
+    apex_exec.close(l_context);
+  exception
+    when others then
+      apex_exec.close(l_context);
+      raise;
+  end load_customer_lov;
 
 end receivables_pkg;
 /
