@@ -151,6 +151,8 @@ AP invoice headers from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.1
 **PK:** `(SourceSystem, InvoiceId)`
 **Indexes:** `InvoiceDate`, `SupplierNumber`, `BusinessUnit`, `PaidStatus`
 
+[Back to top](#quick-navigation)
+
 ---
 
 ## 2. DEMO_AP_INVOICE_LINE_HIST
@@ -253,6 +255,8 @@ AP invoice line details (child rows of invoices above). Mirrors `/fscmRestApi/..
 
 **PK:** None defined
 **Indexes:** `Invoice_Id`, `Purchase_Order_Number`
+
+[Back to top](#quick-navigation)
 
 ---
 
@@ -368,6 +372,8 @@ Purchase order history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/
 **PK:** `Po_Hist_Id` (identity)
 **Indexes:** `Supplier`, `Status`, `OrderDate`, `ProcurementBU`
 
+[Back to top](#quick-navigation)
+
 ---
 
 ## 4. DEMO_ASSIGNMENT_HIST
@@ -446,6 +452,8 @@ HR assignment history from legacy/EBS systems. Flattened from `/hcmRestApi/resou
 
 **PK:** `Assignment_Hist_Id` (identity)
 **Indexes:** `UPPER(DisplayName)`, `DepartmentName`, `AssignmentStatus`, `EffectiveStartDate`, `PersonNumber`
+
+[Back to top](#quick-navigation)
 
 ---
 
@@ -531,6 +539,8 @@ Absence/leave history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11
 
 **PK:** `Absence_Hist_Id` (identity)
 **Indexes:** `PersonNumber`, `AbsenceType`, `StartDate`, `AbsenceDispStatus`
+
+[Back to top](#quick-navigation)
 
 ---
 
@@ -638,6 +648,8 @@ Receivables (AR) invoice history from legacy/EBS systems. Mirrors `/fscmRestApi/
 
 **PK:** `(SourceSystem, CustomerTransactionId)`
 **Indexes:** `TransactionDate`, `BillToCustomerNumber`, `BusinessUnit`, `InvoiceStatus`
+
+[Back to top](#quick-navigation)
 
 ---
 
@@ -752,6 +764,8 @@ Check (payment) history from legacy/EBS systems. Mirrors `/fscmRestApi/resources
 
 **PK:** `Id` (identity)
 **Indexes:** `PaymentDate`, `Payee`, `PaymentStatus`, `BusinessUnit`
+
+[Back to top](#quick-navigation)
 
 ---
 
@@ -888,6 +902,8 @@ Learning record history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/
 
 **PK:** `Id` (identity)
 **Indexes:** `AssignedToNumber`, `AssignmentStatus`, `AssignedDate`, `LearningItemType`
+
+[Back to top](#quick-navigation)
 
 ---
 
