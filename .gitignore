@@ -18,3 +18,10 @@ desktop.ini
 
 # Images
 images/
+
+# MCP config (contains local paths)
+.mcp.json
+
+# Oracle wallets (never commit)
+wallets/
+*.wallet/

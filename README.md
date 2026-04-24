@@ -18,6 +18,7 @@ All tables mirror the **full field set** from their corresponding Fusion REST en
 | 5 | `DEMO_ABSENCE_HIST` | Absences | `absences/demo_absence_hist_ddl.sql` | 56 | `/hcmRestApi/.../absences` |
 | 6 | `DEMO_AR_INVOICES_HIST` | Receivables Invoices | `receivables/demo_ar_invoices_hist.sql` | 80 | `/fscmRestApi/.../receivablesInvoices` |
 | 7 | `DEMO_CHECKS_HIST` | Check History | `checks/demo_checks_hist.sql` | 85 | `/fscmRestApi/.../payablesPayments` |
+| 8 | `DEMO_LEARNING_HIST` | Learning History | `learning/demo_learning_hist.sql` | 137 | `/hcmRestApi/.../learnerLearningRecords` |
 
 ---
 
@@ -738,6 +739,142 @@ Check (payment) history from legacy/EBS systems. Mirrors `/fscmRestApi/resources
 
 ---
 
+## 8. DEMO_LEARNING_HIST
+
+Learning record history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11.13.18.05/learnerLearningRecords`.
+
+| Column | Type | Notes |
+|--------|------|-------|
+| **Identity** | | |
+| `Id` | NUMBER | Identity PK (auto-generated) |
+| **Source tag** | | |
+| `SourceSystem` | VARCHAR2(30) | NOT NULL - 'Legacy' or 'EBS' |
+| **Identifiers** | | |
+| `AssignmentRecordId` | NUMBER | |
+| `AssignmentRecordNumber` | VARCHAR2(30) | |
+| **Assignment type / Status** | | |
+| `AssignmentType` | VARCHAR2(80) | ORA_JOIN_ASSIGNMENT, ORA_PUSH_ASSIGNMENT |
+| `AssignmentTypeMeaning` | VARCHAR2(240) | Voluntary Assignment, Required Assignment |
+| `AssignmentJustification` | VARCHAR2(4000) | |
+| `AssignmentDueDate` | TIMESTAMP WITH TIME ZONE | |
+| `AssignmentStatus` | VARCHAR2(80) | ORA_ASSN_REC_ACTIVE, ORA_ASSN_REC_COMPLETED, etc. |
+| `AssignmentStatusMeaning` | VARCHAR2(240) | Active, Completed, Withdrawn, etc. |
+| `AssignmentSubStatus` | VARCHAR2(80) | |
+| `AssignmentSubStatusMeaning` | VARCHAR2(240) | |
+| `AssignmentAttributionId` | NUMBER | |
+| **Learner (assigned-to)** | | |
+| `AssignedToId` | NUMBER | |
+| `AssignedToNumber` | VARCHAR2(30) | Person number (e.g. 90004) |
+| `AssignedToType` | VARCHAR2(80) | ORA_PERSON |
+| `AssignedToTypeMeaning` | VARCHAR2(240) | |
+| `AssignedToPersonPrimaryEmailAddress` | VARCHAR2(240) | |
+| `AssignedToPersonPrimaryPhoneNumber` | VARCHAR2(80) | |
+| `AssignedToDisplayName` | VARCHAR2(240) | |
+| **Assigner** | | |
+| `AssignerId` | NUMBER | |
+| `AssignerNumber` | VARCHAR2(30) | |
+| `AssignerAttributionType` | VARCHAR2(80) | |
+| `AssignerAttributionTypeMeaning` | VARCHAR2(240) | |
+| `AssignerDisplayName` | VARCHAR2(240) | |
+| `AssignerPersonPrimaryEmailAddress` | VARCHAR2(240) | |
+| `AssignerPersonPrimaryPhoneNumber` | VARCHAR2(80) | |
+| `AssignerCommentsToLearner` | VARCHAR2(4000) | |
+| **Learning item** | | |
+| `LearningItemId` | NUMBER | |
+| `LearningItemNumber` | VARCHAR2(30) | |
+| `LearningItemType` | VARCHAR2(80) | ORA_COURSE, ORA_SPECIALIZATION, ORA_NONCATALOG |
+| `LearningItemTypeMeaning` | VARCHAR2(240) | Course, Specialization, Noncatalog Item |
+| `LearningItemTitle` | VARCHAR2(240) | |
+| `LiShortDescription` | VARCHAR2(4000) | |
+| `LearningItemEffectiveAsOf` | DATE | |
+| `LearningItemPublisherDisplayName` | VARCHAR2(240) | |
+| **Effort / Pricing** | | |
+| `ExpectedEffortInHours` | VARCHAR2(30) | |
+| `ActualEffortInHours` | VARCHAR2(30) | |
+| `LiTotalExpectedEffort` | VARCHAR2(30) | |
+| `LiTotalExpectedEffortUOM` | VARCHAR2(30) | |
+| `LiTotalExpectedEffortUOMMeaning` | VARCHAR2(240) | |
+| `LearningItemMaximumPrice` | NUMBER | |
+| `LearningItemMinimumPrice` | NUMBER | |
+| `LearningItemPriceCurrency` | VARCHAR2(15) | |
+| **Request dates** | | |
+| `RequestedDate` - `RequestRejectedTimestamp` | TIMESTAMP WITH TIME ZONE | 7 request date/timestamp fields |
+| **Waitlist** | | |
+| `EnteredWaitlistDate` - `ExitedWaitlistTimestamp` | TIMESTAMP WITH TIME ZONE | 4 waitlist fields + CurrentWaitlistPosition |
+| **Pending prerequisites** | | |
+| `DeletedDate` | TIMESTAMP WITH TIME ZONE | |
+| `EnteredPendingPrerequisitesDate` - `ExitedPendingPrerequisitesTimestamp` | TIMESTAMP WITH TIME ZONE | 4 prerequisite fields |
+| `EnteredPendingPaymentDate` | TIMESTAMP WITH TIME ZONE | |
+| **Purchase** | | |
+| `PurchaseAmount` | NUMBER | |
+| `PurchaseCurrency` | VARCHAR2(15) | |
+| `PurchasedDate` / `PurchasedTimestamp` | TIMESTAMP WITH TIME ZONE | |
+| **Core lifecycle dates** | | |
+| `AssignedDate` | TIMESTAMP WITH TIME ZONE | Key filter field |
+| `StartedDate` / `StartedTimestamp` | TIMESTAMP WITH TIME ZONE | |
+| `ContentCompletedDate` / `ContentCompletedTimestamp` | TIMESTAMP WITH TIME ZONE | |
+| `EvaluationSubmittedDate` / `EvaluationSubmittedTimestamp` | TIMESTAMP WITH TIME ZONE | |
+| `WithdrawnDate` | TIMESTAMP WITH TIME ZONE | |
+| `CompletedDate` | TIMESTAMP WITH TIME ZONE | |
+| `ActiveDate` | TIMESTAMP WITH TIME ZONE | |
+| **Expiration / Renewal** | | |
+| `ExpirationDate` / `ExpirationTimestamp` | TIMESTAMP WITH TIME ZONE | |
+| `ExpirationInDaysSystemDate` | NUMBER | |
+| `ValidityPeriodRule` / `ValidityPeriodRuleMeaning` | VARCHAR2 | |
+| `RenewalPeriod` | VARCHAR2(80) | |
+| `ExpirationRule` / `ExpirationRuleCode` | VARCHAR2 | |
+| `HasFutureRenewal` | VARCHAR2(10) | 'true'/'false' |
+| `NextRenewAssignmentId` / `Number` | NUMBER/VARCHAR2 | |
+| `HasPasRenewal` | VARCHAR2(5) | 'Y'/'N' |
+| **Withdrawal** | | |
+| `WithdrawnRequestedDate` | TIMESTAMP WITH TIME ZONE | |
+| `StatusChangeComment` | VARCHAR2(4000) | |
+| `ReasonCode` | VARCHAR2(80) | |
+| **Score / CPE** | | |
+| `ActualScore` | NUMBER | |
+| `LearningItemCpeType` / `Meaning` | VARCHAR2 | |
+| `ActualCpeUnits` | NUMBER | |
+| **Learning item subtype** | | |
+| `LearningItemSubType` / `Meaning` | VARCHAR2 | |
+| **Security / Privilege** | | |
+| `DataSecurityPrivilege` / `Meaning` | VARCHAR2 | |
+| **Item versioning** | | |
+| `ExemptedDate` | TIMESTAMP WITH TIME ZONE | |
+| `LearningItemDefinitionUsedDate` | TIMESTAMP WITH TIME ZONE | |
+| `LearningItemEffectiveDate` | TIMESTAMP WITH TIME ZONE | |
+| `LearningItemLatestChangeEventDate` | TIMESTAMP WITH TIME ZONE | |
+| `IsLearnerOnLatestLIVersion` | VARCHAR2(5) | 'Y'/'N' |
+| `EnrollmentQuestionnaireId` | NUMBER | |
+| `SourceId` / `SourceType` | NUMBER/VARCHAR2 | |
+| **Instructor / Author / Coordinator** | | |
+| `LearningItemInstructorType` / `Meaning` | VARCHAR2 | |
+| `LearningItemInstructorDisplayName` | VARCHAR2(240) | |
+| `LearningItemInstructorPersonNumber` | VARCHAR2(30) | |
+| `LearningItemInstructorEmailAddress` | VARCHAR2(240) | |
+| `LearningItemInstructorPrimaryPhoneNumber` | VARCHAR2(80) | |
+| `LearningItemInstructorPersonId` | NUMBER | |
+| `LearningItemAuthorType` / `DisplayName` / `EmailAddress` / `PhoneNumber` / `PersonId` | Various | 5 author fields |
+| `LearningItemCoordDisplayName` / `EmailAddress` / `PhoneNumber` / `PersonId` | Various | 4 coordinator fields |
+| **Pending seat acceptance** | | |
+| `EnteredPendingSeatAcceptanceDate` / `ExitedPendingSeatAcceptanceDate` | TIMESTAMP WITH TIME ZONE | |
+| **Item schedule** | | |
+| `LearningItemStartDateUTC` / `LearningItemEndDateUTC` | TIMESTAMP WITH TIME ZONE | |
+| `LearningItemNotificationPattern` | VARCHAR2(80) | |
+| **Misc** | | |
+| `AssignmentDueInFromSystemDate` | NUMBER | |
+| `RefundRule` | VARCHAR2(240) | |
+| `CanEditAssignmentHint` / `Meaning` | VARCHAR2 | |
+| `AssignmentStateSeverity` / `AssignmentStateMeaning` | VARCHAR2 | |
+| `ViewModeOverrideLearningItemId` | NUMBER | |
+| **Audit** | | |
+| `AssignmentCreatedDate` | TIMESTAMP WITH TIME ZONE | |
+| `AssignmentLastModifiedDate` | TIMESTAMP WITH TIME ZONE | |
+
+**PK:** `Id` (identity)
+**Indexes:** `AssignedToNumber`, `AssignmentStatus`, `AssignedDate`, `LearningItemType`
+
+---
+
 ## Folder Structure
 
 ```
@@ -774,12 +911,19 @@ Historical Data Demo/
 ├── receivables/           ── Receivables Invoices (AR)
 │   ├── demo_ar_invoices_hist.sql          DDL
 │   ├── receivables_pkg.sql / .plb         PL/SQL REST package
-└── checks/               ── Check History (Payments)
-    ├── demo_checks_hist.sql               DDL + sample data
-    ├── check_history_pkg.sql / .plb       PL/SQL REST package
-    ├── check_payee_lov.sql                Payee LOV reference
-    ├── payablesPayments.json / payablesPaymentsDescribe.json  REST endpoint reference
-    └── f121_page_6002.sql                 APEX page
+├── checks/               ── Check History (Payments)
+│   ├── demo_checks_hist.sql               DDL
+│   ├── demo_checks_hist_data.sql          Sample data
+│   ├── check_history_pkg.sql / .plb       PL/SQL REST package
+│   ├── check_payee_lov.sql                Payee LOV reference
+│   ├── payablesPayments.json / payablesPaymentsDescribe.json  REST endpoint reference
+│   └── f121_page_6002.sql                 APEX page
+└── learning/             ── Learning History
+    ├── demo_learning_hist.sql             DDL
+    ├── demo_learning_hist_data.sql        Sample data
+    ├── learning_history_pkg.sql / .plb    PL/SQL REST package
+    ├── learning_learner_lov.sql           Learner LOV reference
+    └── f121_page_6003.sql                 APEX page
 ```
 
 ## Per-Folder Artifacts
@@ -803,4 +947,3 @@ Not yet built:
 - Time history
 - Payroll and W2 history
 - Performance review history
-- Learning history

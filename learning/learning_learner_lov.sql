@@ -1,0 +1,3 @@
+-- Learner LOV for P6003_LEARNER popup (hardcoded for demo)
+-- Returns person number so REST q= filter can use assignedToNumber=<value>
+-- STATIC2:Denise Cooper;10020,Linda Cairns;90004,Marcia Brooks;10077,Marie Archer;10087,Philip Peters;10078,Robert Johnson;90001
