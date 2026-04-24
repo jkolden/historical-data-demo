@@ -7,6 +7,22 @@ All tables mirror the **full field set** from their corresponding Fusion REST en
 
 ---
 
+## Quick Navigation
+
+| # | Table | Jump to |
+|---|-------|---------|
+| 1 | AP Invoices | [DEMO_AP_INVOICES_HIST](#1-demo_ap_invoices_hist) |
+| 2 | AP Invoice Lines | [DEMO_AP_INVOICE_LINE_HIST](#2-demo_ap_invoice_line_hist) |
+| 3 | Purchase Orders | [DEMO_PO_HIST](#3-demo_po_hist) |
+| 4 | HR Assignments | [DEMO_ASSIGNMENT_HIST](#4-demo_assignment_hist) |
+| 5 | Absences | [DEMO_ABSENCE_HIST](#5-demo_absence_hist) |
+| 6 | Receivables Invoices | [DEMO_AR_INVOICES_HIST](#6-demo_ar_invoices_hist) |
+| 7 | Check History | [DEMO_CHECKS_HIST](#7-demo_checks_hist) |
+| 8 | Learning History | [DEMO_LEARNING_HIST](#8-demo_learning_hist) |
+| | **Reference** | [Folder Structure](#folder-structure) · [Per-Folder Artifacts](#per-folder-artifacts) · [Remaining Subject Areas](#remaining-subject-areas-from-sow) |
+
+---
+
 ## Tables at a Glance
 
 | # | Table | Subject Area | Folder / DDL | Columns | REST Endpoint |
