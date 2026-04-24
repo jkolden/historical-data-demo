@@ -41,6 +41,7 @@ All tables mirror the **full field set** from their corresponding Fusion REST en
 ## 1. DEMO_AP_INVOICES_HIST
 
 AP invoice headers from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/invoices`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -159,6 +160,7 @@ AP invoice headers from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.1
 ## 2. DEMO_AP_INVOICE_LINE_HIST
 
 AP invoice line details (child rows of invoices above). Mirrors `/fscmRestApi/.../invoices/{id}/child/invoiceLines`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -265,6 +267,7 @@ AP invoice line details (child rows of invoices above). Mirrors `/fscmRestApi/..
 ## 3. DEMO_PO_HIST
 
 Purchase order history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/purchaseOrders`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -382,6 +385,7 @@ Purchase order history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/
 ## 4. DEMO_ASSIGNMENT_HIST
 
 HR assignment history from legacy/EBS systems. Flattened from `/hcmRestApi/resources/11.13.18.05/publicWorkers` + `child/assignments`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -464,6 +468,7 @@ HR assignment history from legacy/EBS systems. Flattened from `/hcmRestApi/resou
 ## 5. DEMO_ABSENCE_HIST
 
 Absence/leave history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11.13.18.05/absences`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -552,6 +557,7 @@ Absence/leave history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11
 ## 6. DEMO_AR_INVOICES_HIST
 
 Receivables (AR) invoice history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/receivablesInvoices`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -662,6 +668,7 @@ Receivables (AR) invoice history from legacy/EBS systems. Mirrors `/fscmRestApi/
 ## 7. DEMO_CHECKS_HIST
 
 Check (payment) history from legacy/EBS systems. Mirrors `/fscmRestApi/resources/11.13.18.05/payablesPayments`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
@@ -779,6 +786,7 @@ Check (payment) history from legacy/EBS systems. Mirrors `/fscmRestApi/resources
 ## 8. DEMO_LEARNING_HIST
 
 Learning record history from legacy/EBS systems. Mirrors `/hcmRestApi/resources/11.13.18.05/learnerLearningRecords`.
+
 [Back to top](#quick-navigation)
 
 | Column | Type | Notes |
