@@ -12,6 +12,8 @@ desktop.ini
 
 # JSON endpoint samples (contain real data)
 *.json
+# But allow REST describe metadata (no real data, just schema)
+!*Describe.json
 
 # Data insert scripts (contain sample/legacy data)
 *_data.sql

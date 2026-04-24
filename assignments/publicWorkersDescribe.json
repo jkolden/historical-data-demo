@@ -1,0 +1,4598 @@
+{
+  "Resources" : {
+    "publicWorkers" : {
+      "discrColumnType" : false,
+      "titlePlural" : "Public Workers",
+      "usage" : "BusinessObject",
+      "ServiceConfiguration" : {
+        "isCompactViewByDefault" : true
+      },
+      "attributes" : [ {
+        "name" : "PersonId",
+        "type" : "integer",
+        "updatable" : false,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 18,
+        "includeInCompactView" : true,
+        "annotations" : {
+          "description" : "Internal identifier for the person."
+        }
+      }, {
+        "name" : "PersonNumber",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 30,
+        "title" : "Person Number",
+        "includeInCompactView" : true,
+        "maxLength" : "30",
+        "annotations" : {
+          "description" : "Number assigned to a person to identify the person uniquely. Doesn't depend on the person type such as employee, contingent worker, and so on."
+        }
+      }, {
+        "name" : "LastName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Last Name",
+        "includeInCompactView" : true,
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Person's last name."
+        }
+      }, {
+        "name" : "FirstName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "First Name",
+        "includeInCompactView" : true,
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Person's first name."
+        }
+      }, {
+        "name" : "Title",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : false,
+        "allowChanges" : "never",
+        "precision" : 30,
+        "title" : "Title",
+        "includeInCompactView" : true,
+        "maxLength" : "30",
+        "annotations" : {
+          "description" : "Person's salutation such as Mr., Ms., and so on."
+        }
+      }, {
+        "name" : "PreNameAdjunct",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : false,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Prefix",
+        "includeInCompactView" : true,
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Part of the name added before a person's first name."
+        }
+      }, {
+        "name" : "Suffix",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : false,
+        "allowChanges" : "never",
+        "precision" : 80,
+        "title" : "Suffix",
+        "includeInCompactView" : true,
+        "maxLength" : "80",
+        "annotations" : {
+          "description" : "Part of the name appended to a person's last name such as Jr., III, and so on."
+        }
+      }, {
+        "name" : "MiddleNames",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : false,
+        "allowChanges" : "never",
+        "precision" : 80,
+        "title" : "Middle Names",
+        "includeInCompactView" : true,
+        "maxLength" : "80",
+        "annotations" : {
+          "description" : "Person's middle name."
+        }
+      }, {
+        "name" : "Honors",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : false,
+        "allowChanges" : "never",
+        "precision" : 80,
+        "title" : "Honors",
+        "includeInCompactView" : true,
+        "maxLength" : "80",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Higher qualification appended to a person's name such as PhD."
+        }
+      }, {
+        "name" : "KnownAs",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 80,
+        "title" : "Known As",
+        "includeInCompactView" : true,
+        "maxLength" : "80",
+        "annotations" : {
+          "description" : "Person's preferred name."
+        }
+      }, {
+        "name" : "DisplayName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 240,
+        "title" : "Display Name",
+        "includeInCompactView" : true,
+        "maxLength" : "240",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Person's display name."
+        }
+      }, {
+        "name" : "ListName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 240,
+        "title" : "List Name",
+        "includeInCompactView" : true,
+        "maxLength" : "240",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Person's listed name."
+        }
+      }, {
+        "name" : "OrderName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 240,
+        "title" : "Order Name",
+        "includeInCompactView" : true,
+        "maxLength" : "240",
+        "annotations" : {
+          "description" : "Person's order name."
+        }
+      }, {
+        "name" : "WorkEmail",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 240,
+        "title" : "Work Email",
+        "includeInCompactView" : true,
+        "maxLength" : "240",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Person's work e-mail address."
+        }
+      }, {
+        "name" : "Username",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 100,
+        "title" : "User Name",
+        "includeInCompactView" : true,
+        "maxLength" : "100",
+        "annotations" : {
+          "description" : "User name for the person record."
+        }
+      }, {
+        "name" : "PreviousLastName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Previous Last Name",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Person's previous last name."
+        }
+      }, {
+        "name" : "MilitaryRank",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 80,
+        "title" : "Military Rank",
+        "maxLength" : "80",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Person's military rank."
+        }
+      }, {
+        "name" : "FullName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 2000,
+        "title" : "Full Name",
+        "maxLength" : "2000",
+        "properties" : {
+          "DISPLAYWIDTH" : "30"
+        },
+        "annotations" : {
+          "description" : "Person's full name."
+        }
+      }, {
+        "name" : "NameInformation1",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 1",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation2",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 2",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation3",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 3",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation4",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 4",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation5",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 5",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation6",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 6",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation7",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 7",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation8",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 8",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation9",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 9",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation10",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 10",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation11",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 11",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation12",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 12",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation13",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 13",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation14",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 14",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for Oracle Development for legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation15",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 15",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation16",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 16",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation17",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 17",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation18",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 18",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation19",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 19",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation20",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 20",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation21",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 21",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation22",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 22",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation23",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 23",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation24",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 24",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation25",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 25",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation26",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 26",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation27",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 27",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation28",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 28",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation29",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 29",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      }, {
+        "name" : "NameInformation30",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 150,
+        "title" : "Name Information 30",
+        "maxLength" : "150",
+        "annotations" : {
+          "description" : "Additional name attribute reserved for customer legislation-specific name requirements as defined in the person name style definition."
+        }
+      } ],
+      "collection" : {
+        "rangeSize" : 25,
+        "finders" : [ {
+          "name" : "PrimaryKey",
+          "annotations" : {
+            "description" : "Finds all the workers based on the specified primary key attributes."
+          },
+          "attributes" : [ {
+            "name" : "PersonId",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "includeInCompactView" : true,
+            "annotations" : {
+              "description" : "Unique Identifier for the worker."
+            }
+          } ]
+        }, {
+          "name" : "findAssistant",
+          "title" : "findAssistant",
+          "annotations" : {
+            "description" : "Finds the assistant of the worker based on the specified attributes. The finder retrieves the worker assistant if the personEFF custom context Assistant is defined for the worker. You must create a custom context Assistant for person extensible flexfield where the PEI_INFORMATION_NUMBER1 attribute must be configured to capture the person identifier of the assistant."
+          },
+          "attributes" : [ {
+            "name" : "PersonId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the person whose assistant is to be retrieved."
+            }
+          }, {
+            "name" : "PersonNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Number assigned to a person to identify the person uniquely. This is the number of the person whose assistant is to be retrieved."
+            }
+          } ]
+        }, {
+          "name" : "findByWorkerAttr",
+          "title" : "findByWorkerAttr",
+          "annotations" : {
+            "description" : "Finds all the worker assignments based on the specified attributes."
+          },
+          "attributes" : [ {
+            "name" : "AssignmentName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Assignment name for the worker assignment."
+            }
+          }, {
+            "name" : "DepartmentName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Department name for the worker assignment."
+            }
+          }, {
+            "name" : "DisplayName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Display name of the worker."
+            }
+          }, {
+            "name" : "JobName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Job name for the worker assignment."
+            }
+          }, {
+            "name" : "LocationCountry",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Country for the worker assignment."
+            }
+          }, {
+            "name" : "LocationName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Location name for the worker assignment."
+            }
+          }, {
+            "name" : "LocationTownOrCity",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Town or city for the worker assignment."
+            }
+          }, {
+            "name" : "OnlyPrimaryAssignmentFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the finder attributes apply only on the primary assignment of the worker. The default value is false."
+            }
+          }, {
+            "name" : "PersonNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Person number of the worker."
+            }
+          }, {
+            "name" : "PositionName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Position name for the worker assignment."
+            }
+          }, {
+            "name" : "WorkEmail",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Work email of the worker."
+            }
+          } ]
+        }, {
+          "name" : "findManagers",
+          "title" : "findManagers",
+          "annotations" : {
+            "description" : "Finds all the worker managers based on the specified attributes."
+          },
+          "attributes" : [ {
+            "name" : "AssignmentId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the assignment of worker whose managers are to be retrieved."
+            }
+          }, {
+            "name" : "AssignmentNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Unique identifier for the assignment of worker whose managers are to be retrieved."
+            }
+          }, {
+            "name" : "LineManagerFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the manager are retrieved only for line manager relationship. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "PersonId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the person whose managers are to be retrieved."
+            }
+          }, {
+            "name" : "PersonNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Number assigned to a person to identify the person uniquely. This is the number of the person whose managers are to be retrieved."
+            }
+          }, {
+            "name" : "PrimaryAssignmentFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the current assignment is the primary assignment for the worker whose managers are to be retrieved. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "RelationshipType",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Type of managerial relationship with the report such as line manager."
+            }
+          } ]
+        }, {
+          "name" : "findPeers",
+          "title" : "findPeers",
+          "annotations" : {
+            "description" : "Finds all the worker peers based on the specified attributes."
+          },
+          "attributes" : [ {
+            "name" : "AssignmentId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the assignment of the worker whose peers are to be retrieved."
+            }
+          }, {
+            "name" : "AssignmentNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Unique identifier for the assignment of the worker whose peers are to be retrieved."
+            }
+          }, {
+            "name" : "LineManagerFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the peers are retrieved only for line manager relationship. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "PersonId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the person whose peers are to be retrieved."
+            }
+          }, {
+            "name" : "PersonNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Number assigned to a person to identify the person uniquely. This is the number of the person whose peers are to be retrieved."
+            }
+          }, {
+            "name" : "PrimaryAssignmentFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the current assignment is the primary assignment for the worker whose peers are to be retrieved. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "RelationshipType",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Type of managerial relationship with the report such as line manager."
+            }
+          } ]
+        }, {
+          "name" : "findReports",
+          "title" : "findReports",
+          "annotations" : {
+            "description" : "Finds all the worker reports based on the specified attributes."
+          },
+          "attributes" : [ {
+            "name" : "AssignmentId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the assignment."
+            }
+          }, {
+            "name" : "AssignmentNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Unique identifier for the worker assignment."
+            }
+          }, {
+            "name" : "DirectReportsFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether only direct reports should be retrieved for the worker. Valid values are true or false. The default value is true."
+            }
+          }, {
+            "name" : "LineManagerFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the reports are retrieved only for line manager relationship. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "PersonId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Internal identifier for the person whose reports are to be retrieved."
+            }
+          }, {
+            "name" : "PersonNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Number assigned to a person to identify the person uniquely. This is the number of the person whose reports are to be retrieved."
+            }
+          }, {
+            "name" : "PrimaryAssignmentFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the reports are retrieved for the primary assignment of the worker. Valid values are true or false. The default value is false."
+            }
+          }, {
+            "name" : "RelationshipType",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Type of managerial relationship with the report such as line manager."
+            }
+          } ]
+        } ],
+        "links" : [ {
+          "rel" : "self",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers",
+          "name" : "self",
+          "kind" : "collection"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+          "annotations" : {
+            "title" : "Get all workers"
+          }
+        } ]
+      },
+      "item" : {
+        "links" : [ {
+          "rel" : "child",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments",
+          "name" : "assignments",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "PersonId",
+            "destinationAttributes" : "PersonId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages",
+          "name" : "messages",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "PersonId",
+            "destinationAttributes" : "PersonId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts",
+          "name" : "otherCommunicationAccounts",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "PersonId",
+            "destinationAttributes" : "PersonId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones",
+          "name" : "phones",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "PersonId",
+            "destinationAttributes" : "PersonId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos",
+          "name" : "photos",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "PersonId",
+            "destinationAttributes" : "PersonId"
+          }
+        }, {
+          "rel" : "self",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+          "name" : "self",
+          "kind" : "item"
+        }, {
+          "rel" : "canonical",
+          "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+          "name" : "canonical",
+          "kind" : "item"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+          "annotations" : {
+            "title" : "Get a worker"
+          }
+        } ]
+      },
+      "annotations" : {
+        "description" : "The publicWorkers resource provides all the active workers as of the current date and returns public information about workers. Worker types include employee, contingent worker, pending worker, and nonworker. For bulk extract operations, you must use HCM Extracts. Also, you must not use REST APIs for detecting data changes in the application. Instead, use Atom feeds to detect or identify changes made to data for key transactions in Oracle Fusion Cloud HCM. For example, you may use Atom feeds to detect changes in employee's personal details, employment data, new hires, and terminations. See the Atom Feeds section for details about delivered feeds in Oracle Fusion Cloud HCM."
+      },
+      "children" : {
+        "assignments" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Assignments",
+          "ServiceConfiguration" : {
+            "isCompactViewByDefault" : true
+          },
+          "attributes" : [ {
+            "name" : "AssignmentId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "title" : "Assignment ID",
+            "annotations" : {
+              "description" : "Internal identifier for the assignment."
+            }
+          }, {
+            "name" : "AssignmentNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Assignment Number",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Unique identifier for the worker assignment."
+            }
+          }, {
+            "name" : "AssignmentName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "title" : "Business Title",
+            "maxLength" : "80",
+            "annotations" : {
+              "description" : "Name of the worker assignment."
+            }
+          }, {
+            "name" : "LegalEmployerName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Legal Employer",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Name of the legal employer for the assignment."
+            }
+          }, {
+            "name" : "StartDate",
+            "type" : "date",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "title" : "Start Date",
+            "annotations" : {
+              "description" : "Start date of the period of employment."
+            }
+          }, {
+            "name" : "PrimaryFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Primary",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the current assignment is the primary assignment for the worker. Valid values are Yes and No."
+            }
+          }, {
+            "name" : "PrimaryAssignmentFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Primary Assignment",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the current assignment is primary for the work relationship. Valid values are Yes and No."
+            }
+          }, {
+            "name" : "WorkerType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Worker Type",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Worker type for the period of service such as Employee (E), Contingent Worker (C), Pending Worker (P), or Nonworker (N)."
+            }
+          }, {
+            "name" : "WorkerNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Worker Number",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Unique identifier for a worker."
+            }
+          }, {
+            "name" : "WorkAtHomeFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Working at Home",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the person is working at home. Valid values are Yes and No."
+            }
+          }, {
+            "name" : "FullPartTime",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Full Time or Part Time",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the worker is working full time or part time."
+            }
+          }, {
+            "name" : "ManagerName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Manager",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "30"
+            },
+            "annotations" : {
+              "description" : "Name of the manager."
+            }
+          }, {
+            "name" : "BusinessUnitName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Business Unit",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Name of the business unit for the worker assignment."
+            }
+          }, {
+            "name" : "DepartmentName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Department",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "50"
+            },
+            "annotations" : {
+              "description" : "Name of the department for the worker assignment."
+            }
+          }, {
+            "name" : "JobCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Job Code",
+            "maxLength" : "30",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Code of the job for the worker assignment."
+            }
+          }, {
+            "name" : "JobName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Job",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Name of the job for the worker assignment."
+            }
+          }, {
+            "name" : "PositionCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Position Code",
+            "maxLength" : "30",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Code of the position for the worker assignment."
+            }
+          }, {
+            "name" : "PositionName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Position",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Name of the position for the worker assignment."
+            }
+          }, {
+            "name" : "LocationCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 60,
+            "title" : "Location Code",
+            "maxLength" : "60",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Code of the location for the worker assignment."
+            }
+          }, {
+            "name" : "LocationName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Location",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Name of the location for the worker assignment."
+            }
+          }, {
+            "name" : "GradeCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Grade Code",
+            "maxLength" : "30",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Code of the grade for the worker assignment."
+            }
+          }, {
+            "name" : "GradeName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Grade",
+            "maxLength" : "240",
+            "properties" : {
+              "DISPLAYWIDTH" : "40"
+            },
+            "annotations" : {
+              "description" : "Name of the grade for the worker assignment."
+            }
+          }, {
+            "name" : "InternalBuilding",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 45,
+            "title" : "Building",
+            "maxLength" : "45",
+            "annotations" : {
+              "description" : "Building information associated with the work location."
+            }
+          }, {
+            "name" : "InternalFloor",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 45,
+            "title" : "Floor",
+            "maxLength" : "45",
+            "annotations" : {
+              "description" : "Floor information associated with the work location."
+            }
+          }, {
+            "name" : "InternalOfficeNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 45,
+            "title" : "Office Number",
+            "maxLength" : "45",
+            "annotations" : {
+              "description" : "Office number associated with the work location."
+            }
+          }, {
+            "name" : "InternalMailstop",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 45,
+            "title" : "Mail Stop",
+            "maxLength" : "45",
+            "annotations" : {
+              "description" : "Internal mail location."
+            }
+          }, {
+            "name" : "LocationAddressLine1",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Address Line 1",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "First line of the work location address."
+            }
+          }, {
+            "name" : "LocationAddressLine2",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Address Line 2",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Second line of the work location address."
+            }
+          }, {
+            "name" : "LocationAddressLine3",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Address Line 3",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Third line of the work location address."
+            }
+          }, {
+            "name" : "LocationAddressLine4",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "title" : "Address Line 4",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Fourth line of the work location address."
+            }
+          }, {
+            "name" : "LocationRegion1",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 120,
+            "title" : "Region 1",
+            "maxLength" : "120",
+            "annotations" : {
+              "description" : "Primary region in which the work address is located."
+            }
+          }, {
+            "name" : "LocationRegion2",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 120,
+            "title" : "Region 2",
+            "maxLength" : "120",
+            "annotations" : {
+              "description" : "Secondary region within the primary region."
+            }
+          }, {
+            "name" : "LocationRegion3",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 120,
+            "title" : "Region 3",
+            "maxLength" : "120",
+            "annotations" : {
+              "description" : "Subregion within the secondary region."
+            }
+          }, {
+            "name" : "LocationTownOrCity",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Town or City",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Town or city in which the work address is located."
+            }
+          }, {
+            "name" : "LocationPostalCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Postal Code",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Postal code of the work location."
+            }
+          }, {
+            "name" : "LocationCountry",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 60,
+            "title" : "Country",
+            "maxLength" : "60",
+            "annotations" : {
+              "description" : "Country in which the work address is located."
+            }
+          }, {
+            "name" : "LocationLongPostalCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Long Postal Code",
+            "maxLength" : "30",
+            "properties" : {
+              "DISPLAYWIDTH" : "30"
+            },
+            "annotations" : {
+              "description" : "Long postal code of the work location."
+            }
+          }, {
+            "name" : "LocationTimezoneCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 50,
+            "title" : "Time Zone Code",
+            "maxLength" : "50",
+            "annotations" : {
+              "description" : "Time zone of the work location."
+            }
+          }, {
+            "name" : "LocationSingleLineAddress",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "title" : "Address",
+            "annotations" : {
+              "description" : "Single line address."
+            }
+          }, {
+            "name" : "LocationMultiLineAddress",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "title" : "Address",
+            "annotations" : {
+              "description" : "Multiline address of the location."
+            }
+          }, {
+            "name" : "LengthOfServiceYears",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Length of service of a worker in years."
+            }
+          }, {
+            "name" : "LengthOfServiceMonths",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Length of service of a worker in additional months that are less than a full year."
+            }
+          }, {
+            "name" : "LengthOfServiceDays",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Length of service of a worker in additional days that are less than a full month."
+            }
+          }, {
+            "name" : "MarkedAsFavoriteFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the current person is marked as favorite for a particular user. Valid values are Yes and No."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all worker assignments based on the primary key attributes specified."
+              },
+              "attributes" : [ {
+                "name" : "AssignmentId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Assignment ID",
+                "annotations" : {
+                  "description" : "Unique identifier for the worker assignment."
+                }
+              } ]
+            }, {
+              "name" : "findByAssignmentId",
+              "title" : "findByAssignmentId",
+              "annotations" : {
+                "description" : "Finds all worker assignments based on the attributes specified."
+              },
+              "attributes" : [ {
+                "name" : "AssignmentId",
+                "type" : "integer",
+                "updatable" : true,
+                "required" : "Optional",
+                "queryable" : false,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Unique Identifier for the worker assignment."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all workers assignments"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports",
+              "name" : "allReports",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "ManagerId, ManagerAssignmentId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments",
+              "name" : "allReportsDepartments",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "ManagerId, ManagerAssignmentId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations",
+              "name" : "allReportsLocations",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "ManagerId, ManagerAssignmentId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports",
+              "name" : "directReports",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "AssignmentId, PersonId",
+                "destinationAttributes" : "ManagerAssignmentId, ManagerId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory",
+              "name" : "employmentHistory",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "PersonId, AssignmentId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers",
+              "name" : "managers",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "PersonId, AssignmentId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives",
+              "name" : "representatives",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "PersonId, AssignmentId",
+                "destinationAttributes" : "PersonId1, AssignmentId1"
+              }
+            }, {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a worker assignment"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The assignments resource is a child of the publicWorkers resource. It includes all the active assignments of a worker as of the current date."
+          },
+          "children" : {
+            "allReports" : {
+              "discrColumnType" : false,
+              "titlePlural" : "All Reports",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "AssignmentId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the report's assignment."
+                }
+              }, {
+                "name" : "PersonId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the report."
+                }
+              }, {
+                "name" : "PersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the report."
+                }
+              }, {
+                "name" : "AssignmentNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Assignment Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Assignment number of the report."
+                }
+              }, {
+                "name" : "AssignmentName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Business Title",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Business title of the report."
+                }
+              }, {
+                "name" : "LocationId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Location ID",
+                "annotations" : {
+                  "description" : "Unique identifier for the location of the report."
+                }
+              }, {
+                "name" : "DepartmentId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Department ID",
+                "annotations" : {
+                  "description" : "Unique identifier of the department that the report belongs to."
+                }
+              }, {
+                "name" : "WorkerType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Worker Type",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Worker type for the period of service such as Employee (E), Contingent Worker (C), Pending Worker (P), or Nonworker (N)."
+                }
+              }, {
+                "name" : "FirstName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "First Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's first name."
+                }
+              }, {
+                "name" : "LastName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Last Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's last name."
+                }
+              }, {
+                "name" : "DisplayName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Display Name",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "30"
+                },
+                "annotations" : {
+                  "description" : "Display name of the report."
+                }
+              }, {
+                "name" : "KnownAs",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Known As",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Person's preferred name."
+                }
+              }, {
+                "name" : "RelationshipType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Relationship Type",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Type of managerial relationship with the report such as line manager."
+                }
+              }, {
+                "name" : "RelationshipTypeMeaning",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Relationship Type",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Name of the managerial relationship with the report, such as line manager."
+                }
+              }, {
+                "name" : "Level",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 5,
+                "title" : "Level",
+                "annotations" : {
+                  "description" : "Level of the report in the manager's hierarchy."
+                }
+              }, {
+                "name" : "ManagerPersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Manager Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the immediate manager of each report."
+                }
+              }, {
+                "name" : "ManagerAssignmentNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Manager Assignment Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Assignment number of the immediate manager of each report."
+                }
+              }, {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "inCreate",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the representative photo."
+                }
+              }, {
+                "name" : "PhotoName",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 240,
+                "title" : "Photo Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the image file of the representative."
+                }
+              }, {
+                "name" : "Photo",
+                "type" : "attachment",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "title" : "Photo",
+                "actions" : [ {
+                  "name" : "replace",
+                  "method" : "PUT",
+                  "requestType" : [ "application/octet-stream" ]
+                }, {
+                  "name" : "delete",
+                  "method" : "DELETE"
+                }, {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/octet-stream" ]
+                } ],
+                "annotations" : {
+                  "description" : "Unique location of the image. Encrypted version of the file."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all worker reports based on the primary key attributes specified."
+                  },
+                  "attributes" : [ {
+                    "name" : "AssignmentId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Internal identifier for the reports assignment."
+                    }
+                  }, {
+                    "name" : "PhotoId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "inCreate",
+                    "precision" : 18,
+                    "hasDefaultValueExpression" : true,
+                    "title" : "Photo ID",
+                    "annotations" : {
+                      "description" : "Internal identifier for the worker photo."
+                    }
+                  }, {
+                    "name" : "RelationshipType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 30,
+                    "title" : "Relationship Type",
+                    "maxLength" : "30",
+                    "annotations" : {
+                      "description" : "Type of managerial relationship with the report."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all worker reports"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                }, {
+                  "rel" : "enclosure",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports/{id}/enclosure/Photo",
+                  "name" : "Photo",
+                  "kind" : "other"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a worker report"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The allReports resource is a child of the assignments resource. It includes all the reports of a worker as of the current date for a specific assignment."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReports/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "allReportsDepartments" : {
+              "discrColumnType" : false,
+              "titlePlural" : "All Reports Departments",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "DepartmentId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Department ID",
+                "annotations" : {
+                  "description" : "Unique identifier for the department."
+                }
+              }, {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the department."
+                }
+              }, {
+                "name" : "ManagerPersonId",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Manager ID",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Internal identifier for the department manager."
+                }
+              }, {
+                "name" : "ManagerPersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the department manager."
+                }
+              }, {
+                "name" : "ManagerLastName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Last Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Last name of the department manager."
+                }
+              }, {
+                "name" : "ManagerFirstName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "First Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "First name of the department manager."
+                }
+              }, {
+                "name" : "ManagerDisplayName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Manager",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Display name of the department manager."
+                }
+              }, {
+                "name" : "ManagerKnownAs",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Known As",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Person's preferred name."
+                }
+              }, {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the photo."
+                }
+              }, {
+                "name" : "PhotoName",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 240,
+                "title" : "Photo Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the image file."
+                }
+              }, {
+                "name" : "WorkerCount",
+                "type" : "number",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "title" : "Total Workers",
+                "annotations" : {
+                  "description" : "Count of workers in the department."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the departments of all reports based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "DepartmentId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "title" : "Department ID",
+                    "annotations" : {
+                      "description" : "Unique identifier for the department."
+                    }
+                  } ]
+                }, {
+                  "name" : "findAllReportsDepartments",
+                  "title" : "findAllReportsDepartments",
+                  "annotations" : {
+                    "description" : "Finds all the departments that all reports of a worker belong to, for the specified worker type and relationship type. The worker count and the departments returned with this resource must honor the finder criteria."
+                  },
+                  "attributes" : [ {
+                    "name" : "RelationshipType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds departments of all reports of a worker that match the specified relationship type criteria."
+                    }
+                  }, {
+                    "name" : "WorkerType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds departments of all reports of a worker that match the specified worker type criteria."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all departments"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a department"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The allReportsDepartments resource is a child of the assignments resource. It includes all the distinct departments that all the reports of a worker belong to, as of the system date for a specific assignment."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsDepartments/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "allReportsLocations" : {
+              "discrColumnType" : false,
+              "titlePlural" : "All Reports Locations",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "LocationId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Location ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the location."
+                }
+              }, {
+                "name" : "LocationCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 60,
+                "title" : "Location Code",
+                "maxLength" : "60",
+                "annotations" : {
+                  "description" : "Code of the location."
+                }
+              }, {
+                "name" : "LocationName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Location",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the location."
+                }
+              }, {
+                "name" : "WorkerCount",
+                "type" : "number",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "title" : "Total Workers",
+                "annotations" : {
+                  "description" : "Count of the workers in the location."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the locations of all reports based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "LocationId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "title" : "Location ID",
+                    "annotations" : {
+                      "description" : "Unique identifier for the location."
+                    }
+                  } ]
+                }, {
+                  "name" : "findAllReportsLocations",
+                  "title" : "findAllReportsLocations",
+                  "annotations" : {
+                    "description" : "Finds all locations that all reports of a worker belong to, for the specified worker type and relationship type. The worker count and the locations returned with this resource must honor the finder criteria."
+                  },
+                  "attributes" : [ {
+                    "name" : "RelationshipType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds locations of all reports of a worker that match the specified relationship type criteria."
+                    }
+                  }, {
+                    "name" : "WorkerType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds locations of all reports of a worker that match the specified worker type criteria."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all locations"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a location"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The allReportsLocations resource is a child of the assignments resource. It includes all the distinct locations that all the reports of a worker belong to, as of the system date for a specific assignment."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/allReportsLocations/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "directReports" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Direct Reports",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "AssignmentId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Assignment ID",
+                "annotations" : {
+                  "description" : "Internal identifier for the report's assignment."
+                }
+              }, {
+                "name" : "AssignmentNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 50,
+                "title" : "Assignment Number",
+                "maxLength" : "50",
+                "annotations" : {
+                  "description" : "Assignment number of the report."
+                }
+              }, {
+                "name" : "AssignmentName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Business Title",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Business title of the report."
+                }
+              }, {
+                "name" : "PersonId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Person ID",
+                "annotations" : {
+                  "description" : "Internal identifier for the report."
+                }
+              }, {
+                "name" : "PersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the report."
+                }
+              }, {
+                "name" : "FirstName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "First Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's first name."
+                }
+              }, {
+                "name" : "LastName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Last Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's last name."
+                }
+              }, {
+                "name" : "DisplayName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Display Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Display name of the report."
+                }
+              }, {
+                "name" : "KnownAs",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Known As",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Person's preferred name."
+                }
+              }, {
+                "name" : "RelationshipType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Relationship Type",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Type of managerial relationship with the report, such as line manager."
+                }
+              }, {
+                "name" : "RelationshipTypeMeaning",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Relationship Type",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Name of managerial relationship with the report such as line manager."
+                }
+              }, {
+                "name" : "WorkerType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Worker Type",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Worker type for the period of service such as Employee (E), Contingent Worker (C), Pending Worker (P), or Nonworker (N)."
+                }
+              }, {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the photo."
+                }
+              }, {
+                "name" : "PhotoName",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 240,
+                "title" : "Photo Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the image file."
+                }
+              }, {
+                "name" : "Photo",
+                "type" : "attachment",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "always",
+                "title" : "Photo",
+                "actions" : [ {
+                  "name" : "replace",
+                  "method" : "PUT",
+                  "requestType" : [ "application/octet-stream" ]
+                }, {
+                  "name" : "delete",
+                  "method" : "DELETE"
+                }, {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/octet-stream" ]
+                } ],
+                "annotations" : {
+                  "description" : "Unique location of the image. Encrypted version of the file."
+                }
+              }, {
+                "name" : "DirectReportsCount",
+                "type" : "number",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "hasDefaultValueExpression" : true,
+                "title" : "Total Directs",
+                "annotations" : {
+                  "description" : "Count of direct reports of the worker."
+                }
+              }, {
+                "name" : "AllReportsCount",
+                "type" : "number",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "hasDefaultValueExpression" : true,
+                "title" : "Total Workers",
+                "annotations" : {
+                  "description" : "Count of all reports of the worker."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the direct reports based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "AssignmentId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "title" : "Assignment ID",
+                    "annotations" : {
+                      "description" : "Unique identifier for the worker assignment."
+                    }
+                  }, {
+                    "name" : "RelationshipType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : false,
+                    "allowChanges" : "never",
+                    "precision" : 30,
+                    "title" : "Relationship Type",
+                    "maxLength" : "30",
+                    "annotations" : {
+                      "description" : "Type of managerial relationship with the report, such as line manager."
+                    }
+                  } ]
+                }, {
+                  "name" : "findDirectReports",
+                  "title" : "findDirectReports",
+                  "annotations" : {
+                    "description" : "Finds all the direct reports for one or multiple worker types and relationship types."
+                  },
+                  "attributes" : [ {
+                    "name" : "RelationshipType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds direct reports of a worker that match the specified relationship type criteria."
+                    }
+                  }, {
+                    "name" : "WorkerType",
+                    "type" : "string",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Finds direct reports of a worker that match the specified worker type criteria."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all direct reports"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                }, {
+                  "rel" : "enclosure",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports/{id}/enclosure/Photo",
+                  "name" : "Photo",
+                  "kind" : "other"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a direct report"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The directReports resource is a child of the assignments resource. It includes all the direct reports of a worker as of the system date for a specific assignment."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/directReports/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "employmentHistory" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Employment History",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "AssignmentId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the worker's assignment."
+                }
+              }, {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Name",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Business title of the assignment."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the employment history based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "AssignmentId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : false,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Unique identifier for the worker assignment."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all worker employment history"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a worker employment history"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The employmentHistory resource is a child of the assignments resource. It includes the employment history of a worker."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/employmentHistory/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "managers" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Managers",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "AssignmentSupervisorId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "inCreate",
+                "precision" : 18,
+                "title" : "Assignment Supervisor ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the supervisor on workers assignment."
+                }
+              }, {
+                "name" : "ManagerPersonId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Manager ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the manager."
+                }
+              }, {
+                "name" : "ManagerPersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the person's manager."
+                }
+              }, {
+                "name" : "FirstName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "First Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's first name."
+                }
+              }, {
+                "name" : "LastName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Last Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's last name."
+                }
+              }, {
+                "name" : "DisplayName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Name",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "30"
+                },
+                "annotations" : {
+                  "description" : "Person's display name."
+                }
+              }, {
+                "name" : "KnownAs",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Known As",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Person's preferred name."
+                }
+              }, {
+                "name" : "ManagerAssignmentId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Manager Assignment ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the assignment manager."
+                }
+              }, {
+                "name" : "ManagerAssignmentNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Assignment Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Assignment number of the supervisor."
+                }
+              }, {
+                "name" : "ManagerAssignmentName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Assignment Name",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Assignment name of the supervisor."
+                }
+              }, {
+                "name" : "ManagerType",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 30,
+                "title" : "Manager Type",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Role the supervisor has with regards to the overall organization structure such as functional, project leader, and so on."
+                }
+              }, {
+                "name" : "ManagerTypeMeaning",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Manager Type",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Name of the role the supervisor has with regards to the overall organization structure, such as functional, project leader, and so on."
+                }
+              }, {
+                "name" : "JobCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Code",
+                "maxLength" : "30",
+                "properties" : {
+                  "DISPLAYWIDTH" : "40"
+                },
+                "annotations" : {
+                  "description" : "Code of the job for the manager assignment."
+                }
+              }, {
+                "name" : "JobName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Job",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "40"
+                },
+                "annotations" : {
+                  "description" : "Name of the job for the manager assignment."
+                }
+              }, {
+                "name" : "PositionCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Code",
+                "maxLength" : "30",
+                "properties" : {
+                  "DISPLAYWIDTH" : "40"
+                },
+                "annotations" : {
+                  "description" : "Code of the position for the manager assignment."
+                }
+              }, {
+                "name" : "PositionName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Position",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "40"
+                },
+                "annotations" : {
+                  "description" : "Name of the position for the manager assignment."
+                }
+              }, {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "inCreate",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the supervisor photo."
+                }
+              }, {
+                "name" : "PhotoName",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 240,
+                "title" : "Photo Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the image file of the supervisor."
+                }
+              }, {
+                "name" : "Photo",
+                "type" : "attachment",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : false,
+                "allowChanges" : "always",
+                "title" : "Image",
+                "actions" : [ {
+                  "name" : "replace",
+                  "method" : "PUT",
+                  "requestType" : [ "application/octet-stream" ]
+                }, {
+                  "name" : "delete",
+                  "method" : "DELETE"
+                }, {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/octet-stream" ]
+                } ],
+                "annotations" : {
+                  "description" : "Unique location of the image. Encrypted version of the file."
+                }
+              }, {
+                "name" : "WorkEmail",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Work Email",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "30"
+                },
+                "annotations" : {
+                  "description" : "Manager's work e-mail address."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the managers based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "AssignmentSupervisorId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "inputRequired" : true,
+                    "queryable" : true,
+                    "allowChanges" : "inCreate",
+                    "precision" : 18,
+                    "title" : "Assignment Supervisor ID",
+                    "annotations" : {
+                      "description" : "Surrogate identifier for the supervisor on workers assignment."
+                    }
+                  }, {
+                    "name" : "PhotoId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "inCreate",
+                    "precision" : 18,
+                    "hasDefaultValueExpression" : true,
+                    "title" : "Photo ID",
+                    "annotations" : {
+                      "description" : "Internal identifier for the worker photo."
+                    }
+                  } ]
+                }, {
+                  "name" : "findByAssignmentSupervisorId",
+                  "title" : "findByAssignmentSupervisorId",
+                  "annotations" : {
+                    "description" : "Finds all worker assignment managers based on the attributes specified."
+                  },
+                  "attributes" : [ {
+                    "name" : "AssignmentSupervisorId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Surrogate identifier for the supervisor on workers assignment."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all worker managers"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                }, {
+                  "rel" : "enclosure",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers/{id}/enclosure/Photo",
+                  "name" : "Photo",
+                  "kind" : "other"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a worker manager"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The managers resource is a child of the assignments resource. It includes all the managers of a worker."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/managers/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "representatives" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Representatives",
+              "ServiceConfiguration" : {
+                "isCompactViewByDefault" : true
+              },
+              "attributes" : [ {
+                "name" : "AsgResponsibilityId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the responsibility."
+                }
+              }, {
+                "name" : "ResponsibilityType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Responsibility Type",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Responsibility type of the representative such as Human Resource Representative."
+                }
+              }, {
+                "name" : "ResponsibilityName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Responsibility Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the responsibility type of the representative such as Benefits Representative."
+                }
+              }, {
+                "name" : "FirstName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "First Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's first name."
+                }
+              }, {
+                "name" : "LastName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 150,
+                "title" : "Last Name",
+                "maxLength" : "150",
+                "annotations" : {
+                  "description" : "Person's last name."
+                }
+              }, {
+                "name" : "DisplayName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Display Name",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "30"
+                },
+                "annotations" : {
+                  "description" : "Display name of the representative."
+                }
+              }, {
+                "name" : "KnownAs",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "title" : "Known As",
+                "maxLength" : "80",
+                "annotations" : {
+                  "description" : "Person's preferred name."
+                }
+              }, {
+                "name" : "PersonId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the representative."
+                }
+              }, {
+                "name" : "PersonNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Person Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Person number of the representative."
+                }
+              }, {
+                "name" : "AssignmentNumber",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Assignment Number",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Assignment number of the representative."
+                }
+              }, {
+                "name" : "WorkContactsFlag",
+                "type" : "boolean",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Work Contacts",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Indicates whether the representatives should be displayed."
+                }
+              }, {
+                "name" : "FromDate",
+                "type" : "date",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "title" : "From Date",
+                "annotations" : {
+                  "description" : "Date when the responsibility starts."
+                }
+              }, {
+                "name" : "ToDate",
+                "type" : "date",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "title" : "To Date",
+                "annotations" : {
+                  "description" : "Date when the responsibility ends."
+                }
+              }, {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "inCreate",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Surrogate identifier for the representative photo."
+                }
+              }, {
+                "name" : "PhotoName",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 240,
+                "title" : "Photo Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Name of the image file of the representative."
+                }
+              }, {
+                "name" : "Photo",
+                "type" : "attachment",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : false,
+                "allowChanges" : "always",
+                "title" : "Image",
+                "actions" : [ {
+                  "name" : "replace",
+                  "method" : "PUT",
+                  "requestType" : [ "application/octet-stream" ]
+                }, {
+                  "name" : "delete",
+                  "method" : "DELETE"
+                }, {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/octet-stream" ]
+                } ],
+                "annotations" : {
+                  "description" : "Unique location of the image. Encrypted version of the file."
+                }
+              }, {
+                "name" : "WorkEmail",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Work Email",
+                "maxLength" : "240",
+                "properties" : {
+                  "DISPLAYWIDTH" : "30"
+                },
+                "annotations" : {
+                  "description" : "Representative's work e-mail address."
+                }
+              }, {
+                "name" : "Usage",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 4000,
+                "annotations" : {
+                  "description" : "Description of the purpose for the responsibility."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all the representatives based on the specified primary key attributes."
+                  },
+                  "attributes" : [ {
+                    "name" : "AsgResponsibilityId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Internal identifier for the responsibility."
+                    }
+                  }, {
+                    "name" : "PhotoId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "inCreate",
+                    "precision" : 18,
+                    "hasDefaultValueExpression" : true,
+                    "title" : "Photo ID",
+                    "annotations" : {
+                      "description" : "Internal identifier for the worker photo."
+                    }
+                  } ]
+                }, {
+                  "name" : "findByAsgResponsibilityId",
+                  "title" : "findByAsgResponsibilityId",
+                  "annotations" : {
+                    "description" : "Finds all worker assignment responsibilities based on the attributes specified."
+                  },
+                  "attributes" : [ {
+                    "name" : "AsgResponsibilityId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "required" : "Optional",
+                    "queryable" : false,
+                    "allowChanges" : "always",
+                    "annotations" : {
+                      "description" : "Internal identifier for the responsibility."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all workers representatives"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                }, {
+                  "rel" : "enclosure",
+                  "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives/{id}/enclosure/Photo",
+                  "name" : "Photo",
+                  "kind" : "other"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a worker representative"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The representatives resource is a child of the assignments resource. It includes all the worker representatives as of the current date."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/{id}/child/representatives/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            }
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/assignments/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "messages" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Messages",
+          "ServiceConfiguration" : {
+            "isCompactViewByDefault" : true
+          },
+          "attributes" : [ {
+            "name" : "MessageId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "hasDefaultValueExpression" : true,
+            "annotations" : {
+              "description" : "Surrogate identifier for the worker message."
+            }
+          }, {
+            "name" : "MessageContent",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 4000,
+            "title" : "Message",
+            "maxLength" : "4000",
+            "properties" : {
+              "DISPLAYWIDTH" : "30"
+            },
+            "annotations" : {
+              "description" : "Content of the message."
+            }
+          }, {
+            "name" : "FromDate",
+            "type" : "datetime",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "title" : "From Date",
+            "properties" : {
+              "DISPLAYWIDTH" : "30"
+            },
+            "annotations" : {
+              "description" : "Date from when the message is valid."
+            }
+          }, {
+            "name" : "ToDate",
+            "type" : "datetime",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "title" : "To Date",
+            "properties" : {
+              "DISPLAYWIDTH" : "30"
+            },
+            "annotations" : {
+              "description" : "Date until when the message is valid."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all the messages based on the specified primary key attributes."
+              },
+              "attributes" : [ {
+                "name" : "MessageId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "annotations" : {
+                  "description" : "Surrogate identifier for the message."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all worker messages"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a worker message"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The messages resource is a child of the publicWorkers resource. It includes all the available messages of a worker."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/messages/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "otherCommunicationAccounts" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Other Communication Accounts",
+          "ServiceConfiguration" : {
+            "isCompactViewByDefault" : true
+          },
+          "attributes" : [ {
+            "name" : "DeliveryMethodId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Surrogate identifier for the delivery method."
+            }
+          }, {
+            "name" : "Provider",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Provider",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Provider of the account such as Facebook and Twitter. Valid values are defined in the commonLookupsLOV."
+            }
+          }, {
+            "name" : "AccountName",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 1000,
+            "title" : "Account Name",
+            "maxLength" : "1000",
+            "annotations" : {
+              "description" : "Name of the account."
+            }
+          }, {
+            "name" : "DateStart",
+            "type" : "date",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "title" : "From Date",
+            "annotations" : {
+              "description" : "Start date of the account."
+            }
+          }, {
+            "name" : "DateEnd",
+            "type" : "date",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "title" : "To Date",
+            "annotations" : {
+              "description" : "End date of the account."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all the other communication accounts based on the specified primary key attributes."
+              },
+              "attributes" : [ {
+                "name" : "DeliveryMethodId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Surrogate identifier for the delivery method."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all worker communication accounts"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a worker communication account"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The otherCommunicationAccounts resource is a child of the publicWorkers resource. It includes all the other communication accounts of a worker."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/otherCommunicationAccounts/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "phones" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Phones",
+          "ServiceConfiguration" : {
+            "isCompactViewByDefault" : true
+          },
+          "attributes" : [ {
+            "name" : "PhoneId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Internal identifier for the phone."
+            }
+          }, {
+            "name" : "PrimaryFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "hasDefaultValueExpression" : true,
+            "title" : "Primary",
+            "annotations" : {
+              "description" : "Indicates whether the phone number is the primary phone of the worker."
+            }
+          }, {
+            "name" : "PhoneType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Type",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Type of phone such as Work, Home, and so on."
+            }
+          }, {
+            "name" : "PhoneTypeMeaning",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "title" : "Meaning",
+            "maxLength" : "80",
+            "annotations" : {
+              "description" : "Meaning of the phone type lookup code."
+            }
+          }, {
+            "name" : "CountryCodeNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Country Code",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Country code of the phone number."
+            }
+          }, {
+            "name" : "AreaCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "title" : "Area Code",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Area code of the phone number."
+            }
+          }, {
+            "name" : "PhoneNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 60,
+            "title" : "Number",
+            "maxLength" : "60",
+            "annotations" : {
+              "description" : "Phone number of various phone types such as Work, Home, and so on."
+            }
+          }, {
+            "name" : "Extension",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 60,
+            "title" : "Extension",
+            "maxLength" : "60",
+            "annotations" : {
+              "description" : "Extension number for the phone."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all the worker phones based on the specified primary key attributes."
+              },
+              "attributes" : [ {
+                "name" : "PhoneId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Internal identifier for the worker phone."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all worker phones"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a worker phone"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The phones resource is a child of the publicWorkers resource. It includes all the available phone numbers of a worker."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/phones/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "photos" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Photos",
+          "ServiceConfiguration" : {
+            "isCompactViewByDefault" : true
+          },
+          "attributes" : [ {
+            "name" : "PhotoId",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "inCreate",
+            "precision" : 18,
+            "hasDefaultValueExpression" : true,
+            "title" : "Photo ID",
+            "annotations" : {
+              "description" : "Internal identifier for the photo."
+            }
+          }, {
+            "name" : "PrimaryFlag",
+            "type" : "boolean",
+            "updatable" : true,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 30,
+            "defaultValue" : false,
+            "title" : "Primary",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Indicates whether the image is primary."
+            }
+          }, {
+            "name" : "PhotoType",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "inCreate",
+            "precision" : 30,
+            "defaultValue" : "PROFILE",
+            "title" : "Type",
+            "maxLength" : "30",
+            "annotations" : {
+              "description" : "Type of photo, such as Profile or Cover."
+            }
+          }, {
+            "name" : "PhotoName",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : true,
+            "inputRequired" : true,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 240,
+            "title" : "Photo Name",
+            "maxLength" : "240",
+            "annotations" : {
+              "description" : "Name of the image file."
+            }
+          }, {
+            "name" : "Photo",
+            "type" : "attachment",
+            "updatable" : true,
+            "mandatory" : true,
+            "inputRequired" : true,
+            "queryable" : false,
+            "allowChanges" : "always",
+            "title" : "Image",
+            "actions" : [ {
+              "name" : "replace",
+              "method" : "PUT",
+              "requestType" : [ "application/octet-stream" ]
+            }, {
+              "name" : "delete",
+              "method" : "DELETE"
+            }, {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/octet-stream" ]
+            } ],
+            "annotations" : {
+              "description" : "Unique location of the image. Encrypted version of the file."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all the worker photos based on the specified primary key attributes."
+              },
+              "attributes" : [ {
+                "name" : "PhotoId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "inCreate",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "title" : "Photo ID",
+                "annotations" : {
+                  "description" : "Internal identifier for the worker photo."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all worker photos"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            }, {
+              "rel" : "enclosure",
+              "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos/{id}/enclosure/Photo",
+              "name" : "Photo",
+              "kind" : "other"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a worker photo"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The photos resource is a child of the publicWorkers resource. It includes all the available photos of a worker."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/{id}/child/photos/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        }
+      },
+      "links" : [ {
+        "rel" : "self",
+        "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/describe",
+        "name" : "self",
+        "kind" : "describe"
+      }, {
+        "rel" : "canonical",
+        "href" : "https://ecga-test.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/publicWorkers/describe",
+        "name" : "canonical",
+        "kind" : "describe"
+      } ]
+    }
+  }
+}
