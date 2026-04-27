@@ -14,6 +14,9 @@ desktop.ini
 *.json
 # But allow REST describe metadata (no real data, just schema)
 !*Describe.json
+# Allow sample data folder (mock/demo data only, no real PII)
+!sample-data/
+!sample-data/*.json
 
 # Data insert scripts (contain sample/legacy data)
 *_data.sql

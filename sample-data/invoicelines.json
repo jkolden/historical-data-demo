@@ -1,0 +1,141 @@
+{
+    "items": [
+        {
+            "LineNumber": 1,
+            "LineAmount": 1500,
+            "AccountingDate": "2026-02-01",
+            "UOM": null,
+            "TaxRateName": null,
+            "LineType": "Item",
+            "AssetBook": null,
+            "TrackAsAssetFlag": false,
+            "BaseAmount": null,
+            "Description": "Invoice line",
+            "IncomeTaxRegion": null,
+            "Item": null,
+            "ItemDescription": null,
+            "LineSource": "Interface imported invoice",
+            "Quantity": null,
+            "DistributionCombination": "303-622106-5005-000-000000-000000000-00000-00000",
+            "AssetCategory": "",
+            "UnitPrice": null,
+            "ProrateAcrossAllItemsFlag": null,
+            "LandedCostEnabled": "N",
+            "DiscardedFlag": false,
+            "CanceledFlag": false,
+            "IncomeTaxType": null,
+            "TaxRateCode": null,
+            "TaxRate": null,
+            "TaxClassification": "NO TAX",
+            "GenerateDistributions": "D",
+            "BudgetDate": "2026-02-01",
+            "FundsStatus": null,
+            "ApprovalStatus": "Not required",
+            "DistributionSet": null,
+            "Withholding": null,
+            "ShipToLocationCode": null,
+            "ShipToLocation": null,
+            "ShipToCustomerLocation": null,
+            "TaxControlAmount": null,
+            "AssessableValue": 1500,
+            "ProductType": null,
+            "ProductCategory": null,
+            "ProductCategoryCodePath": null,
+            "UserDefinedFiscalClassification": null,
+            "UserDefinedFiscalClassificationCode": null,
+            "IntendedUse": null,
+            "IntendedUseCode": null,
+            "ProductFiscalClassification": null,
+            "ProductFiscalClassificationCode": null,
+            "ProductFiscalClassificationType": null,
+            "TransactionBusinessCategory": "Purchase Transaction",
+            "TransactionBusinessCategoryCodePath": "PURCHASE_TRANSACTION",
+            "Requester": null,
+            "PurchasingCategory": null,
+            "MatchType": "NOT_MATCHED",
+            "MatchOption": null,
+            "MatchBasis": null,
+            "PurchaseOrderNumber": null,
+            "PurchaseOrderLineNumber": null,
+            "PurchaseOrderScheduleLineNumber": null,
+            "ReceiptNumber": null,
+            "ReceiptLineNumber": null,
+            "ConsumptionAdviceNumber": null,
+            "ConsumptionAdviceLineNumber": null,
+            "FinalMatchFlag": null,
+            "MultiperiodAccountingStartDate": null,
+            "MultiperiodAccountingEndDate": null,
+            "MultiperiodAccountingAccrualAccount": "",
+            "CreatedBy": "michael.blackmore@sierra-cedar.com",
+            "CreationDate": "2026-03-30T13:41:38+00:00",
+            "LastUpdateDate": "2026-03-30T13:58:37+00:00",
+            "LastUpdatedBy": "michael.blackmore@sierra-cedar.com",
+            "LastUpdateLogin": "4E3EEB6D790682D9E0634262310A3FF4",
+            "RequesterId": null,
+            "PrepaymentNumber": null,
+            "PrepaymentLineNumber": null,
+            "PrepaymentIncludedonInvoiceFlag": null,
+            "ReferenceKeyTwo": null,
+            "ProductTable": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
+                    "name": "invoiceLines",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001",
+                    "name": "invoiceLines",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001",
+                    "name": "invoices",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceDistributions",
+                    "name": "invoiceDistributions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineDff",
+                    "name": "invoiceLineDff",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineGdf",
+                    "name": "invoiceLineGdf",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines/00020000000EACED0005770800000000000003E90000000AACED0005770400000001/child/invoiceLineProjectDff",
+                    "name": "invoiceLineProjectDff",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://<your-fusion-host>/fscmRestApi/resources/11.13.18.05/invoices/1001/child/invoiceLines",
+            "name": "invoiceLines",
+            "kind": "collection"
+        }
+    ]
+}
